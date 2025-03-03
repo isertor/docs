@@ -3,56 +3,316 @@ title: "New file"
 description: "Description of your new file."
 ---
 
-<Warning>
-  While order cancellations are reversible, order refunds are not reversible once initiated. Please ensure you are refunding the correct order and correct amount before proceeding.
-</Warning>
+<Info>
+  **Who is this article for?**
 
-## How to cancel and refund order on Atlas
+  * Atlas users with Cashier or above permissions. Set permissions from Settings > Team members.
 
-1/ On the sidebar menu, find the order you need to adjust:![Side bar menu](/sidebar.png)
+  * Atlas POS, Scan to order, Kiosk, Online and Aggregator subscribers.
+</Info>
 
-* **`Today’s orders` —** if the order was placed today
+## Before you begin
 
-* **`Upcoming orders` —** if the order is scheduled for a future date
+This guide will run through how to refund payments for paid orders.
 
-* **`All orders`** — list of all orders, including past orders
+You can do partial or full refunds from the Atlas Merchant Portal. If you are processing payments directly with Atlas, refunds happen automatically once triggered, and take 5-10 business days to reflect in diners' bank accounts.
 
-\*\* If you use Atlas POS, tap the 🕒 logo to access recent checked-out orders.
+Note that while order cancellations are reversible, order refunds are not once initiated. Make sure you are refunding the correct order and amount before proceeding.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/8aee948b-9843-4907-8b92-c79e8ee8b8fc/3645c4c1-4c6e-4aeb-a05c-53bdc43e628f/Untitled.gif)
+## Processing a full refund (and cancelling the order)
 
-2/ Tap on any order to open up the order details modal. You can search by order ID, table, address, and customer details on the search bar too.
+Use this option when you do not want to charge this amount to the diner, which means the sales amount is not collectible. There are two options to cancel and refund an order:
 
-3/ Change the order status from the dropdown \*\*\*\*to **`Cancelled`.**
+<AccordionGroup>
+  <Accordion title="Option 1: Refund from Atlas POS" defaultOpen={false}>
+    Follow these steps to cancel and refund an entire bill from Atlas POS:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/8aee948b-9843-4907-8b92-c79e8ee8b8fc/16a84fa2-5f7d-48d5-9e34-ed68eb50f084/Untitled.gif)
+    1. Open and log in to your POS station (from Stations)
 
-4/ If you want to refund the order as well, tap on **`Cancel and open refund modal`**. In the refund modal, fill up Refund amount & Refund reason, both are mandatory.
+    2. Click on the order history button&#x20;
 
-5/ Click on **`Refund`** once the details are correct.
+       <Icon icon="clock" />
 
-6/ You can verify that the refund was successful checking the order payment breakdown—it will state the **Refunded amount.**
+       &#x20;\> tap on the order.
 
-7/ Tap on the `+` button to see the refund status and print the **`Refund receipt`**.
+    3. Alternatively: click on the search button&#x20;
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4109f548-cc6a-4c7b-bd8e-f8656d07aa20/Untitled.png)
+       <Icon icon="magnifying-glass" />
 
-## FAQs
+       &#x20;and key in your order number > tap on the order.
 
-### Will cancelled orders be considered part of my sales?
+    4. On the order details modal, tap on the status "Completed" and scroll down to "Cancelled".
 
-No, cancelled orders are not considered sales.
+    5. Select the option to Cancel and refund order.
 
-Canceled orders will not appear in your Daily summary report.
+    6. On the refund confirmation page, confirm the amount and refund reason, and tap Refund.
 
-Cacneled orders will only appear in your Sales report if you toggle the filter to show cancelled orders.
+    After this, you can print a Refund receipt from the dropdown Print receipt > Refund receipt.
+  </Accordion>
 
-### Can I revert an order cancellation?
+  <Accordion title="Option 2: Refund from Orders page" defaultOpen={false}>
+    Follow these steps to cancel and refund an entire bill from one of the Orders pages:
 
-Yes, you can change back the status from Cancelled to Completed, the same way you changed it from Completed to Cancelled.
+    1. Tap on All orders, Today's orders or Upcoming orders page.
 
-While order cancellations are reversible, order refunds are not reversible once initiated. Please ensure you are refunding the correct order and correct amount before proceeding.
+    2. Tap on the order to open it.
 
-### Can I revert an order refund?
+    3. Alternatively: click on the search bar&#x20;
 
-No. While order cancellations are reversible, order refunds are not reversible once initiated. Please ensure you are refunding the correct order and correct amount before proceeding.
+       <Icon icon="magnifying-glass" />
+
+       &#x20;and key in your order number > tap on the order.
+
+    4. On the order details modal, tap on the status "Completed" and scroll down to "Cancelled".
+
+    5. Select the option to Cancel and refund order.
+
+    6. On the refund confirmation page, confirm the amount and refund reason, and tap Refund.
+
+    After this, you can print a Refund receipt from the dropdown Print receipt > Refund receipt.
+  </Accordion>
+</AccordionGroup>
+
+## Processing a full refund (and reopening the order)
+
+Use this option when you accidentally charged an open order, and you need to reopening in the POS (for example, to continue adding items).
+
+You can only do this from inside Atlas POS. Follow these steps to refund an entire bill from Atlas POS and reopen the order:
+
+1. Open and log in to your POS station (from Stations)
+
+2. Click on the order history button&#x20;
+
+   <Icon icon="clock" />
+
+   &#x20;\> tap on the order.
+
+3. Alternatively: click on the search button&#x20;
+
+   <Icon icon="magnifying-glass" />
+
+   &#x20;and key in your order number > tap on the order.
+
+4. On the order details modal, tap "Adjust" on the top-right corner.
+
+5. Select the option to "Re-Open in POS (refund required)".
+
+6. On the refund confirmation page, confirm the amount and refund reason, and tap Refund.
+
+After this, you can go back to the POS, and you will find the order re-opened.
+
+## Processing a full refund (and recharging the order)
+
+Use this option when you need to charge the amount to the diner, but the initial payment was charged with the wrong payment type. There are two options to refund and recharge an order:
+
+<AccordionGroup>
+  <Accordion title="Option 1: Refund and recharge from Atlas POS" defaultOpen={false}>
+    Follow these steps to refund and recharge an entire bill from Atlas POS:
+
+    1. Open and log in to your POS station (from Stations).
+
+    2. Click on the order history button&#x20;
+
+       <Icon icon="clock" />
+
+       &#x20;\> tap on the order.
+
+    3. Alternatively: click on the search button&#x20;
+
+       <Icon icon="magnifying-glass" />
+
+       &#x20;and key in your order number > Tap on the order.
+
+    4. On the order details modal, tap "Adjust" on the top-right corner.
+
+    5. Select the option to "Refund and make a different payment"
+
+    6. Enter refund reason > Tap "Refund $00.00", where 00.00 is the amount to refund.
+
+    7. In the next page, select an option for diners to pay again:
+
+       * Option 1: Online payment link.
+
+         1. Requirement: The order must have the diner's email assigned.
+
+         2. Tap on "Charge", and an email will be sent to the diner's email, for them to pay online.
+
+         3. After paid, the order will update with the new payment.
+
+       * Option 2: Payment terminal.
+
+         1. Requirement: You must own an Atlas payment terminal for this.
+
+         2. Select this option > Tap on "Continue"
+
+         3. Tap on the "Select terminal to charge" dropdown, and select your current station
+
+         4. Tap on "Payment type" dropdown, and select the correct payment type
+
+         5. Tap on "Charge payment"
+
+       * Option 3: Manual payment.
+
+         1. Select this option > Tap on "Continue"
+
+         2. Tap on "Payment type" dropdown, and select the correct payment type
+
+         3. Tap on "Update"
+
+    8. Once the diner has paid the order again, the red banner indicating an underpayment will disappear from the order details modal.
+  </Accordion>
+
+  <Accordion title="Option 2: Refund and recharge from Orders page" defaultOpen={false}>
+    Follow these steps to refund and recharge an entire from one of the Orders pages:
+
+    1. Tap on All orders, Today's orders or Upcoming orders page.
+
+    2. Tap on the order to open it.
+
+    3. Alternatively: click on the search bar&#x20;
+
+       <Icon icon="magnifying-glass" />
+
+       &#x20;and key in your order number > tap on the order.
+
+    4. On the order details modal, tap "Issue refund".
+
+    5. Enter the full amount (selected by default) > Enter refund reason > Tap "Refund"
+
+    6. On the next page, select an option for diners to pay again:
+
+       * Option 1: Online payment link.
+
+         1. Requirement: The order must have the diner's email assigned.
+
+         2. Tap on "Charge", and an email will be sent to the diner's email, for them to pay online.
+
+         3. After paid, the order will be updated with the new payment details.
+
+       * Option 2: Payment terminal.
+
+         1. Requirement: You must own an Atlas payment terminal for this.
+
+         2. Select this option > Tap on "Continue"
+
+         3. Tap on the "Select terminal to charge" dropdown, and select your current station
+
+         4. Tap on "Payment type" dropdown, and select the correct payment type
+
+         5. Tap on "Charge payment"
+
+       * Option 3: Manual payment.
+
+         1. Select this option > Tap on "Continue"
+
+         2. Tap on "Payment type" dropdown, and select the correct payment type
+
+         3. Tap on "Update"
+  </Accordion>
+</AccordionGroup>
+
+Once the diner has paid the order again, the red banner indicating an underpayment will disappear from the order details modal.
+
+## Processing a partial refund
+
+Use this option when you accidentally overcharged an order, and you need to refund part of it (for example, you added an extra item that was not served).
+
+<AccordionGroup>
+  <Accordion title="Option 1: Partial refund from Atlas POS" defaultOpen={false}>
+    Follow these steps to do a partial refund on a bill from Atlas POS:
+
+    1. Open and log in to your POS station (from Stations)
+
+    2. Click on the order history button&#x20;
+
+       <Icon icon="clock" />
+
+       &#x20;\> tap on the order.
+
+    3. Alternatively: click on the search button&#x20;
+
+       <Icon icon="magnifying-glass" />
+
+       &#x20;and key in your order number > tap on the order.
+
+    4. On the order details modal, tap on "Adjust" > Tap on "Edit order".
+
+    5. Select the option to Cancel and refund order.
+
+    6. You will see your cart is now editable. A few things you can do from here:
+
+       1. Remove an item by tapping on the remove button&#x20;
+
+          <Icon icon="bin-recycle" iconType="regular" />
+
+       2. Adjust quantity with the minus and plus buttons&#x20;
+
+          <Icon icon="circle-minus" />
+
+          &#x20;
+
+          <Icon icon="circle-plus" />
+
+          &#x20;
+
+       3. Adjust sales quantities, scrolling down and selecting the editable boxes
+
+       4. Add and remove new items, by tapping on the top-right corner "Edit cart" button
+
+    7. Once you are done with your changes, tap " Update " in the top-right corner.
+
+    8. A red banner will prompt with the calculated difference to refund. Tap on Refund.
+
+    9. On the refund confirmation page, confirm the amount and refund reason, and tap Refund.
+
+    After this, you can print a Refund receipt from the dropdown "Print receipt" > "Refund receipt".&#x20;
+  </Accordion>
+
+  <Accordion title="Option 2: Partial refund from Orders page" defaultOpen={false}>
+    Follow these steps to do a partial refund on a bill from one of the Orders pages:
+
+    1. Tap on All orders, Today's orders or Upcoming orders page.
+
+    2. Tap on the order to open it.
+
+    3. Alternatively: click on the search bar&#x20;
+
+       <Icon icon="magnifying-glass" />
+
+       &#x20;and key in your order number > tap on the order.
+
+    4. On the order details modal, tap on "Edit order".
+
+    5. Select the option to Cancel and refund order.
+
+    6. You will see your cart is now editable. A few things you can do from here:
+
+       1. Remove an item by tapping on the remove button&#x20;
+
+          <Icon icon="bin-recycle" iconType="regular" />
+
+       2. Adjust quantity with the minus and plus buttons&#x20;
+
+          <Icon icon="circle-minus" />
+
+          &#x20;
+
+          <Icon icon="circle-plus" />
+
+          &#x20;
+
+       3. Adjust sales quantities, scrolling down and selecting the editable boxes
+
+       4. Add and remove new items, by tapping on the top-right corner "Edit cart" button
+
+    7. Once you are done with your changes, tap " Update " in the top-right corner.
+
+    8. A red banner will prompt with the calculated difference to refund. Tap on Refund.
+
+    9. On the refund confirmation page, confirm the amount and refund reason, and tap Refund.
+
+    After this, you can print a Refund receipt from the dropdown "Print receipt" > "Refund receipt".&#x20;
+  </Accordion>
+</AccordionGroup>
+
+You can also print the updated Customer receipt from the dropdown "Print receipt" > "Customer receipt only" once you are done with the changes.
