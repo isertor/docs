@@ -24,33 +24,33 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "essentials/refunds"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
+      "anchors": [ 
+        {
+        "anchor": "Website",
+        "href": "https://atlas.kitchen",
+        "icon": "website"
+        },
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://help.atlas.kitchen",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Instagram",
+          "href": "https://www.instagram.com/eatwithatlas",
+          "icon": "instagram"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "href": "https://atlaskitchen.notion.site/atlas-blog",
+          "icon": "blog"
         }
       ]
     }
