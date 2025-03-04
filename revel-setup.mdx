@@ -1,0 +1,240 @@
+---
+title: 'Hot to set up Revel integration'
+description: 'This guide explains how to integrate Atlas with Revel, covering API setup, menu mapping, dining options, payment types, discounts, and service fees. It also provides steps for configuring order synchronization, table mapping, and testing the integration.'
+---
+
+## Step 1 - Get API information
+
+The Atlas team will use this information to set up the integration with Revel. These are the details we will need:
+
+* **Revel account URL** (E.g. [https://restaurantname.revelup.com/](https://companyname.revelup.com/))
+
+* **Establishment Number(s)** (if you have multiple locations, each location will have a unique number)
+
+* &#x20;**API key and API secret:**
+
+  * If you don’t have this information, you can email to your Revel reseller something similar to this:
+
+> Hi...,&#x20;
+> We will integrate Revel with Atlas, and we need our API KEY, API SECRET, Revel Account url and Establishment Number.
+> Can you be able to provide me with that information?
+> Cheers,
+
+It might take a couple of days for them to share the above information. Share it with your Atlas onboarding manager once you receive it, and we will handle the rest.
+
+## Step 2 - Configuration on Revel
+
+### **2.1 - Set up menus**
+
+Revels allow merchants to create custom menus that can be used for online orders (aka web orders). Atlas will pull these menus to use them for your delivery and dine-in channels.
+
+Here’s a quick view on how the mapping works. This is how the delivery menu is set up on Revel:
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Ff3207454-250b-4d99-95a6-2d947ef0ac82%2F4ea9de87-6129-4910-beab-63c674f0b61e.png?table=block\&id=1253eda5-08a0-4f17-996d-e4593db67d7f\&cache=v2)
+
+This is the same delivery menu on Atlas, when it's pulled from Revel:
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Fec0076a9-9230-4340-b710-21615c6a5012%2FUntitled.png?table=block\&id=0dac30fa-0443-4062-89cb-004d1660f1c4\&cache=v2)
+
+For menus — if your dine-in and delivery menus are different (e.g. pricing, product names, SKUs), you will need to set up on Revel a menu for each of these channels, and check the Categories Atlas should pull.&#x20;
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Fb4a9e6a4-c4f2-407c-9472-d7c6b1c55279%2FUntitled.png?table=block\&id=4a98fd09-db0c-4440-84f3-dc762dad615a\&cache=v2)
+
+For products — you will need to set each price variation as a different Product on Revel, and house it under the correct Sub-category > Category.
+
+Your custom menus should have these values:
+
+* Name: Enter something to easily identify the menu (e.g. Atlas Scan To Order).
+
+* Application Type: `Mode`
+
+* Mode / Station: `Online`
+
+* Active: `Check`
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2F43edaa23-a68e-48bd-847b-d5b7ffa0642e%2FUntitled.png?table=block\&id=fef84927-9a13-47b9-80f5-459511f9a748\&cache=v2)
+
+* Click on Effective Dates/Time > Toggle Date Range & Everyday as `Open` > Set Date Range Start Date as a day in the past, leave End Date empty > Ensure Everyday is Open at 12:00AM & Close at 11:59PM > `Save`
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2F09dadc16-364f-406a-811d-3d4589b268ba%2FUntitled.png?table=block\&id=ce3caad4-f01d-42a5-a9e6-ca05768ec849\&cache=v2)
+
+Alternatively, check [Revel guide on how to create custom menus](https://support.revelsystems.com/s/article/Custom-Menus-1583150454200).
+
+<Info>
+  You will need to set 2 sets of SKUs on Revel, if you are using Atlas Aggregator and your third-platform menus (e.g. Grabfood, Deliveroo) have a different price.
+</Info>
+
+### **2.2 - Set up dining options**
+
+To set up the integration, we need to link Atlas order sources (e.g. Scan to order, Grabfood, etc.) to a corresponding Dining option(s) on Revel. More than one order source can point to the same Dining option too.
+
+Create a dining option on Revel, and share with your Account Manager the mapping Atlas should follow. You can check [Revel’s guide on how to set up a custom dining option](https://support.revelsystems.com/s/article/Adding-and-Removing-Dining-Options-1583149094555).
+
+### **2.3 - Set up payment types**
+
+To set up the integration, we need to link Atlas order sources (e.g. Scan to order, Grabfood, etc.) to a corresponding Payment types option(s) on Revel. More than one order source can point to the same Dining option too.
+
+Usually, most merchants just point all Atlas orders to a single Payment option on Revel, called “Atlas”.&#x20;
+
+Create a payment type on Revel, and share with your Account Manager the mapping Atlas should follow. You can check [Revel’s guide on how to create a custom payment option](https://support.revelsystems.com/s/article/Customizable-Payment-Methods).
+
+### **2.4 - Set up discounts**
+
+**Set up a dynamic discount on Atlas and share the barcode with Atlas.** Revel only supports dynamic discounts with online orders, so we will need to set that up.
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb8f387c8-114d-4958-b4f7-ef376fb9e6ba%2FUntitled.png?table=block\&id=7ee07e32-61ee-49ad-9fde-3fea2e4558e6\&cache=v2)
+
+Check [Revel’s guide on how to set up a discount code](https://support.revelsystems.com/s/article/Setting-Up-Discounts-1583151657417).
+
+### **2.5 - Set up dynamic service fee (for delivery fees)**
+
+We will need to set up a dynamic service fee to capture the delivery fee on Revel too. When you create this, make sure the Alias is `deliveryfee`, all in small characters and single word.
+
+Here an example of how your Dynamic delivery fee should look like:
+
+![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Fbc61925c-e003-4555-8eed-0f6bb9d918e7%2FUntitled.png?table=block\&id=48e866a4-29c2-4ad7-9e71-38f80c55e4a7\&cache=v2)
+
+Check [Revel’s guide on how to set Dynamic service fees](https://support.revelsystems.com/s/article/Service-Fee-Guide-1583149941083).
+
+If you don’t see this option, reach out to your Revel reseller so that they enable it for you. Dynamic service can only enabled by the Revel support team.
+
+### **2.6 - Enable the “Print online orders” option on the main POS station**
+
+This option can only be enabled on one POS station per outlet. Usually, Revel recommends enabling this option at the central station at the outlet. To **enable Print Online orders**:
+
+* Go to **Establishment** > **Stations >** Select your main or central station **>** Scroll down to Printing on the Details tab > Check the box Print Online Orders
+
+  ![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Fee6e899d-da50-4860-9e1b-6363de53655e%2FUntitled.png?table=block&id=d848d3f8-97de-4037-9789-049e50f27a29&cache=v2)
+
+If you don’t see this option, reach out to your Revel reseller so that they enable it for you. Print Online orders can only enabled by the Revel support team. You might still not be able to see it, even after they enabled it for you.
+
+<Info>
+  After Atlas syncs your orders to Revel, any printing configuration within Revel needs to be configured directly on Revel (and cannot be set on Atlas).
+</Info>
+
+## Step 3 - Configuration on Atlas
+
+### **3.1 - Set up Revel sync lead time and Atlas print lead time**
+
+When a new order flows in, we can help you set two types of triggers:
+
+* Atlas print lead time → When you want orders to print on your Atlas hardware
+
+* Revel sync lead time → When you want orders to sync to Revel POS. This is a lead time is counted from the serving time (and not preparation time).
+
+Example:&#x20;
+
+* Atlas print lead time = 120 mins
+
+* Revel sync lead time = 30 mins
+
+If a delivery order is placed at 10am, for the serving time of 4:00pm - 4:30pm, this will happen:
+
+* Order prints on your Atlas at 2:00pm.
+
+* Order syncs to Revel (and print on your Revel printers) at  3:30pm.
+
+Best practice: Print orders earlier on Atlas hardware (so that front of house is aware and can plan), and sync them to Revel only when the kitchen should start preparing them.
+
+### **3.2- Set up table mapping between Atlas & Revel**
+
+If your Revel establishment is using tables and you need that information for operations, we will need to:
+
+1. Set up tables on Revel
+
+2. Set up tables on Atlas
+
+3. (Atlas team) Do a manual mapping for these 2 tables
+
+4. (Atlas team) Enable feature flip `use_revel_table_integration` to send table information with each order&#x20;
+
+Reach out to your main point of contact on Atlas to get points 3 & 4 done, and if you need any help with point 2.
+
+## Step 4 - Test the integration
+
+**4.1 - Schedule testing time with the merchant to test the integration**
+
+1. Verify menu sync (products, prices) on Atlas&#x20;
+
+2. Verify order sync on Revel\*\*\*\*&#x20;
+
+   1. The order appears on POS stating as a closed order
+
+   2. The order appears with the correct dining option&#x20;
+
+   3. The order appears with the correct payment option&#x20;
+
+   4. The order appears with the correct payment breakdown&#x20;
+
+   5. The order appears with the correct call name&#x20;
+
+   6. The order appears on the order history report
+
+   7. (if using tables) The order appears with the correct table
+
+## FAQs & other info
+
+### Important considerations
+
+* If this is not a brand-new integration, some of your existing Online pre-orders placed before the integration is set up will not sync to Revel.&#x20;
+
+* Atlas does not currently support Revel Combos / Product Group pricing. Aggregator stores (e.g. Grabfood, Foodpanda) usually have issues with this setup too.
+
+### Settings FAQs
+
+<AccordionGroup>
+  <Accordion title="What details do we need from the merchant to enable Revel?" defaultOpen={false}>
+    * API key&#x20;
+
+    * API secret&#x20;
+
+    * Account URL&#x20;
+
+    * Establishment ID
+  </Accordion>
+
+  <Accordion title="What permissions do they need on the Revel account to pull the menu?" defaultOpen={false}>
+    * Permission to pull the web orders menu for a given establishment&#x20;
+
+    * Permission to push the a web orders
+
+    * Permission to pull dining options&#x20;
+
+    * Permission to pull payment options &#x20;
+  </Accordion>
+
+  <Accordion title="What settings are required to be configured for Atlas to push orders to Revel?" defaultOpen={false}>
+    Revel needs to turn on Print online orders option in order to listen to web orders
+    ![Notion Image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fed27ced5-8989-4dd2-88a1-2964e193d8d9%2FUntitled.png?table=block\&id=57e23ffe-7b01-4504-b85a-44f801112d36\&cache=v2)
+  </Accordion>
+
+  <Accordion title="What payment methods does Atlas use?" defaultOpen={false}>
+    Atlas uses one of the payment methods listed on  `/resources/CustomPaymentType` API (verify this with merchant)
+  </Accordion>
+
+  <Accordion title="How can my orders sync as closed orders? My orders are syncing as open orders on Revel." defaultOpen={false}>
+    Auto-closing orders is a setting that you can configure on Revel as a Revel user. It’s located in the Revel management console, inside the settings tab. It should look like this:&#x9;
+    ![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2Fc7e0499f-6c61-4417-89cd-725bccea2d81%2Fimage.png?table=block\&id=f17a4fa9-2e07-4378-969a-a5bd67dce59c\&cache=v2)
+  </Accordion>
+
+  <Accordion title="Orders sync to Revel, but do not display on my KDS." defaultOpen={false}>
+    This might happen if your newly created dining options (e.g. Atlas STO, Atlas Online, Grabfood, etc.) are not selected to be displayed on your KDS.&#x20;
+
+    You can fix this by clicking “Filter by” on the top right corner of your Revel KDS, and making sure all these dining options are selected.
+  </Accordion>
+</AccordionGroup>
+
+### Menu FAQs
+
+<AccordionGroup>
+  <Accordion title="What menu does Atlas pull from Revel?" defaultOpen={false}>
+    Atlas uses web orders menu `weborders/menu/?establishment=${establishment}`
+  </Accordion>
+
+  <Accordion title="Where to verify the online menus on Revel?" defaultOpen={false}>
+    All the custom menus that are tagged as Online will be part of this menu
+    ![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2F3443e1b5-9cb6-494f-a7f3-a9dfcf5c4c29%2FUntitled.png?table=block\&id=a3b00a2a-ec96-47e5-8cd0-1cde8ec561ba\&cache=v2)
+    All the categories/products that are marked to be in an online menu will be part of the menu
+    ![Notion Image](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8aee948b-9843-4907-8b92-c79e8ee8b8fc%2F2a0713c7-d659-44ad-a534-4f0b09a937de%2FUntitled.png?table=block\&id=9e0d107c-d0a7-46a2-8134-34635f0071bf\&cache=v2)
+  </Accordion>
+</AccordionGroup>
