@@ -25,7 +25,8 @@
             "group": "Essentials",
             "pages": [
               "essentials/refunds",
-              "essentials/editing-order"
+              "essentials/editing-order",
+              "essentials/admin-orders"
             ]
           }
         ]
