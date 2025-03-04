@@ -29,7 +29,8 @@
               "essentials/admin-orders",
               "essentials/stocks",
               "essentials/revel-setup",
-              "essentials/diners-phone-update"
+              "essentials/diners-phone-update",
+              "essentials/pos-layout-setup"
             ]
           }
         ]
