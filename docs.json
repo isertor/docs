@@ -27,7 +27,8 @@
               "essentials/refunds",
               "essentials/editing-order",
               "essentials/admin-orders",
-              "essentials/stocks"
+              "essentials/stocks",
+              "essentials/revel-setup"
             ]
           }
         ]
