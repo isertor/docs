@@ -3,7 +3,7 @@ title: 'How to create menus'
 description: 'This guide explains how to create, structure, and configure menus in Atlas, including adding sections, products, and modifier groups.'
 ---
 
-* Atlas users with Admin or Menu Manager permissions. Set permissions from **Settings > Team members**.
+* Atlas users with Admin or Menu Manager permissions. Set permissions from Settings > Team members.
 
 * Users managing menus for online ordering, POS, and kiosks.
 
@@ -17,7 +17,7 @@ This guide covers how to create and configure menus, including:
 
 * Assigning products and modifiers
 
-## Creating a New Menu
+## Creating a new menu
 
 Follow these steps to create a new menu:
 
@@ -38,7 +38,7 @@ Follow these steps to create a new menu:
 
 Once the first draft is saved, you can start adding sections, products, and modifier groups.
 
-## Adding Sections to a Menu
+## Creating and adding sections to a menu
 
 * Sections will house your products
 
@@ -58,54 +58,171 @@ Once the first draft is saved, you can start adding sections, products, and modi
   </Step>
 
   <Step title="Add the details of your new section > Tap on &#x22;Save&#x22;">
-    You can leave the ID field blank, which will be auto-generated after saving. The rest of information is <u>Required</u>.
+    You can leave the ID field blank, which will be auto-generated after saving.
     ![](/CleanShot2025-03-11at14.02.52@2x.png)
   </Step>
 </Steps>
 
 You can also blablabla
 
-## Adding Products to a Section
+## Adding products to a section
 
-1. Open a **section** and tap **Add a Product**.
+Opener goes here.
 
-2. Choose to add a **new** or **existing** product.
+<Steps>
+  <Step title="Inside the menu: Scroll down to the new section > Tap on Add a product">
+    ![](/CleanShot2025-03-11at14.14.07@2x.png)
+  </Step>
 
-3. Fill in the required fields:**Best practice:** Use a **1:1 aspect ratio** for images with blank space around the edges.
+  <Step title="Tap on &#x22;Create new product&#x22;  to add a new product, or select existing products and tap &#x22;Add&#x22;">
+    ![](/CleanShot2025-03-11at14.17.55@2x.png)
 
-   * **Name**
 
-   * **Currency & Price**
+    Note that for existing products, you can search and select more than 1 to add in batch to the section.
+    If you are creating a new product, continue to the next steps.
+  </Step>
+</Steps>
 
-   * *Description* (Accepts HTML tags for formatting)
+## Creating products
 
-   * *Tags* (Used for printing and KDS configurations)
+Tapping on "Create a new product" will open the "Product details" page.&#x20;
 
-   * *Brand*
+The basic values are "Name", "Description", "Price" and "Brand". If you are creating a simple product, and you don't have complicated printing configurations, fill these up and Tap "Save" to create a simple product.
 
-   * *Image* (PNG/JPG, up to 10MB)
+![](/CleanShot2025-03-11at14.31.27@2x.png)
 
-## Configuring Modifier Groups
+Let's break the rest down:
 
-1. Open a **product**, then go to **Configuration**.
+* **SKU**
 
-2. Tap **Select Modifier Groups**.
+  * This is an internal identifier that only you will see (and not diners). You can leave it blank, and one will be generated.
 
-3. Choose to add a **new** or **existing** modifier group.
+* **Internal name**
 
-   * **Modifier Groups** allow diners to make choices within a product (e.g., Choice of Doneness).
+  * This is the label shown on your kitchen receipts, stickers and display screens. Diners will only see the product "Name".&#x20;
 
-4. Fill in the required fields:
+  * If left blank, your staff will see "Name" instead.
 
-   * **Name**
+* **Exempt from service charge**
 
-   * **Minimum selection** (Set to `0` to make this optional)
+  * Toggle this configuration on for retail-specific products that are exempted from service charges.
 
-   * **Maximum selection** (Set to `1` if only one choice is allowed)
+* **Printer / KDS / Dispatch tags**&#x20;
 
-   * *Maximum selection per modifier* (Leave blank if unrestricted)
+  * Use this field to tag products to be printed or displayed on the corresponding printers, KDS, or Dispatch screens.&#x20;
 
-## Adding Modifiers to a Modifier Group
+  * Tap on this field to see the available tags, or key in a new one and press enter to save it before saving the product.&#x20;
+
+  * During onboarding, we will pre-set these up for you and guide you on how to use them.
+
+* **Product tags -**&#x20;
+
+  * Use this field to tag products for targeted discounts or segmenting.&#x20;
+
+  * These tags can be selected as a condition when create new discounts.
+
+* **Reporting category** -&#x20;
+
+  * Reporting categories will be reflected in your reports. Only one is allowed per product.&#x20;
+
+  * Tap on this field to see the available categories, or key in a new one and press enter to save it before saving the product.
+
+* **Horizontal image** -&#x20;
+
+  * This will be the image shown for your products.&#x20;
+
+  * We recommend using square images with a minimum size of 800 x 800 pixels, keeping the subject centered, and ensuring the file size does not exceed 1-2 MB.&#x20;
+
+  * Note that the edges of the images may be cropped automatically depending on where they are used across Atlas and the different platforms we integrate with. To avoid unintended cropping, leave some margin-safe space around the subject.
+
+  * You can upload it using 3 different methods:
+
+1. Copy from another product
+
+2. Upload from URL
+
+3. Upload file from your device
+
+* **Promotional labels -**&#x20;
+
+  * These labels will be displayed on your products to promote them / add relevant information
+
+  * You can select a colour that fits and stands out too
+
+  * This is how they'll look like:
+
+    ![](/CleanShot2025-03-11at14.56.47.png)
+
+## Adding modifier Groups to a product
+
+Opening goes here -- what are modifier groups?
+
+<Steps>
+  <Step title="Inside a product: Scroll down to Modifier groups > Tap on Select modifier groups">
+    ![](/CleanShot2025-03-11at15.05.44@2x.png)
+  </Step>
+
+  <Step title="Tap on &#x22;Create a new modifier group&#x22;  to create and add a new modifier group, or tap on &#x22;Select&#x22; to add an existing one">
+    ![](/CleanShot2025-03-11at15.12.59@2x.png)
+  </Step>
+</Steps>
+
+You can add as many modifier groups as you want to a product (best practice is to limit them to 5-6 max.). Use the search bar to find specific ones, and the ID field to identify them internally.
+If you are creating a new modifier group, continue to the next steps.
+
+
+
+## Creating  new modifier groups
+
+Tapping on "Create a new modifier group" will open the "Modifier group details" page. It will look like this:
+
+![](/CleanShot2025-03-11at15.17.43@2x.png)Fill in the details and tap on save to create a new modifier group. Best practice is to create an empty modifier group without modifiers first, save it, and edit it to add all its modifiers.
+
+Let's break it down:
+
+* **Name (Required) -**
+
+  * Enter a name for the modifier group (e.g., "Choice of Sides").
+
+* **ID -**
+
+  * System-generated or custom identifier for the modifier group.
+
+* **Min selection required (Required) -**
+
+  * Set the minimum number of selections a customer must make.
+
+  * For example, if this is optional, set it to 0.
+
+* **Max selection required (Required) -**
+
+  * Set the maximum number of selections a customer can make.
+
+* **Max quantity per modifier -**
+
+  * Define how many times a single modifier can be selected.
+
+* **Print on receipt -**
+
+  * Enable if the modifier group should be printed on customer receipts.
+
+  * It should be on by default.
+
+* **Print large modifiers -**
+
+  * Enable if selected modifiers should appear larger on receipts.
+
+* **Show thumbnails** –&#x20;
+
+  * Enable if modifier thumbnails photo should display.
+
+* **Select Modifiers** –&#x20;
+
+  * Add individual modifiers to this group (e.g., "Extra Cheese," "Spicy Level").
+
+## Adding modifiers to a modifier group
+
+![](/CleanShot2025-03-11at15.29.08@2x.png)
 
 1. Open a **modifier group** and tap **Select Modifiers**.
 
