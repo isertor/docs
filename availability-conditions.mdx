@@ -1,0 +1,68 @@
+---
+title: "WIP - Set Availability Conditions for products and sections"
+description: "This guide explains how to configure availability conditions for products or sections in Atlas, using flexible rules to control visibility based on date, time, and other criteria."
+---
+
+<Info>
+  **Who is this article for?**
+
+  * Atlas users managing product availability for menus.
+
+  * Users who need to set custom availability rules for specific products or sections.
+</Info>
+
+## Before you begin
+
+Availability conditions allow users to control when a product or section is visible on the menu. These conditions help manage inventory, seasonal items, or time-limited offers.
+
+## Setting Availability Conditions
+
+<Steps>
+  <Step title="Find the product to edit">
+    * Navigate to **Menu Builder > Menus > Edit Menu** > Find the product.
+
+    * Or go to **Menu Builder > Products** > Find the product.
+  </Step>
+
+  <Step title="Open the Product Details modal">
+    Tap on the product to open its settings.
+
+    ![Product Details](https://prod-files-secure.s3.us-west-2.amazonaws.com/8aee948b-9843-4907-8b92-c79e8ee8b8fc/300c0cfd-5f89-4063-9c5f-5542423045fc/Untitled.png)
+  </Step>
+
+  <Step title="Scroll down to the `Availability` section">
+    Locate the availability settings within the product details.
+  </Step>
+
+  <Step title="Add availability conditions">
+    Use availability rules to determine when a product is available or unavailable.
+  </Step>
+</Steps>
+
+## Understanding Availability Conditions
+
+Atlas allows multiple conditions using **`AND`** and **`OR`** statements:
+
+* **`AND`** – **All** conditions must be met for the product to be available or unavailable.
+
+* **`OR`** – **At least one** condition must be met for the product to be available or unavailable.
+
+* **No conditions added** – The product will be displayed as always available unless manually marked as unavailable.
+
+### Example: Hiding an Item for a Specific Period
+
+To temporarily remove an item from the menu:
+
+<Steps>
+  <Step title="Set a date range">
+    Apply **March 1 to March 15** as the active date range.
+  </Step>
+
+  <Step title="Select `Unavailable if`">
+    Choose this option to ensure the product remains hidden during the selected period.
+  </Step>
+</Steps>
+
+<Info>
+  **Tip:** Use availability conditions to automate menu updates and prevent manual changes during seasonal closures or promotions.
+</Info>
