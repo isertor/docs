@@ -14,13 +14,19 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Using Atlas Merchant Portal",
+            "group": "Orders",
+            "pages": [
+              {
+            "group": "Editing",
+            "icon": "pen-paintbrush",
             "pages": [
               "merchant-portal/refunds",
               "merchant-portal/editing-order",
               "merchant-portal/stocks",
               "merchant-portal/admin-orders",
               "merchant-portal/use-customers-data"
+                ]
+              }
             ]
           },
           {
