@@ -51,9 +51,27 @@
           {
             "group": "Configuring Atlas",
             "pages": [
+              {
+            "group": "Menus",
+            "icon": "file",
+            "pages": [
               "configuring-atlas/create-menus",
-              "configuring-atlas/pos-layout-setup",
-              "configuring-atlas/revel-setup"
+              "configuring-atlas/pos-layout-setup"              
+                ]
+              },
+              {
+            "group": "Marketing tools",
+            "icon": "megaphone",
+            "pages": [
+              
+                ]
+              },
+              {
+            "group": "Outlet settings",
+            "icon": "shop",
+            "pages": [
+              
+                
             ]
           },
           {
@@ -62,8 +80,16 @@
               "others/diners-phone-update"
             ]
           }
-        ]
+        ],
+          {
+      "tab": "Integrations",
+      "groups": [
+        {
+          "group": "Revel POS integration",
+          "pages": ["configuring-atlas/revel-setup"]
+            }
       }
+          
     ],
     "global": {
       "anchors": [ 
