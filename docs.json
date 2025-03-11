@@ -101,11 +101,6 @@
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Instagram",
-          "href": "https://www.instagram.com/eatwithatlas",
-          "icon": "instagram"
-        },
-        {
           "anchor": "Blog",
           "href": "https://atlaskitchen.notion.site/atlas-blog",
           "icon": "blog"
@@ -126,15 +121,14 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to Atlas Merchant Portal",
+      "href": "https://portal.atlas.kitchen"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/eatwithatlas",
+      "email": "mailto:hello@atlas.kitchen"
     }
   }
 }
