@@ -30,8 +30,7 @@
               "essentials/stocks",
               "essentials/revel-setup",
               "essentials/diners-phone-update",
-              "essentials/pos-layout-setup",
-              "essentials/create-menus"
+              "essentials/pos-layout-setup"
             ]
           }
         ]
