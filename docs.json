@@ -17,86 +17,83 @@
             "group": "Using Atlas Merchant Portal",
             "pages": [
               {
-            "group": "Orders",
-            "icon": "bag-shopping",
-            "pages": [
-              "merchant-portal/refunds",
-              "merchant-portal/editing-order",
-              "merchant-portal/admin-orders"
+                "group": "Orders",
+                "icon": "bag-shopping",
+                "pages": [
+                  "merchant-portal/refunds",
+                  "merchant-portal/editing-order",
+                  "merchant-portal/admin-orders"
                 ]
               },
               {
-            "group": "Stocks",
-            "icon": "table",
-            "pages": [
-              "merchant-portal/stocks"
+                "group": "Stocks",
+                "icon": "table",
+                "pages": [
+                  "merchant-portal/stocks"
                 ]
               },
               {
-            "group": "Customers",
-            "icon": "users",
-            "pages": [
-              "merchant-portal/use-customers-data"
-              
+                "group": "Customers",
+                "icon": "users",
+                "pages": [
+                  "merchant-portal/use-customers-data"
                 ]
               }
             ]
           },
           {
             "group": "Using Atlas Products",
-            "pages": [
-              
-            ]
+            "pages": []
           },
           {
             "group": "Configuring Atlas",
             "pages": [
               {
-            "group": "Menus",
-            "icon": "file",
-            "pages": [
-              "configuring-atlas/create-menus",
-              "configuring-atlas/pos-layout-setup"              
+                "group": "Menus",
+                "icon": "file",
+                "pages": [
+                  "configuring-atlas/create-menus",
+                  "configuring-atlas/pos-layout-setup"
                 ]
               },
               {
-            "group": "Marketing tools",
-            "icon": "megaphone",
-            "pages": [
-              
-                ]
+                "group": "Marketing tools",
+                "icon": "megaphone",
+                "pages": []
               },
               {
-            "group": "Outlet settings",
-            "icon": "shop",
-            "pages": [
-              
-                
-            ]
-          },
-          {
-            "group": "Others",
-            "pages": [
-              "others/diners-phone-update"
+                "group": "Outlet settings",
+                "icon": "shop",
+                "pages": []
+              },
+              {
+                "group": "Others",
+                "pages": [
+                  "others/diners-phone-update"
+                ]
+              }
             ]
           }
-        ],
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
           {
-      "tab": "Integrations",
-      "groups": [
-        {
-          "group": "Revel POS integration",
-          "pages": ["configuring-atlas/revel-setup"]
-            }
+            "group": "Revel POS integration",
+            "pages": [
+              "configuring-atlas/revel-setup"
+            ]
+          }
+        ]
       }
-          
     ],
     "global": {
-      "anchors": [ 
+      "anchors": [
         {
-        "anchor": "Website",
-        "href": "https://atlas.kitchen",
-        "icon": "website"
+          "anchor": "Website",
+          "href": "https://atlas.kitchen",
+          "icon": "website"
         },
         {
           "anchor": "Documentation",
