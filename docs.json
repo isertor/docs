@@ -36,11 +36,10 @@
             "group": "Customers",
             "icon": "users",
             "pages": [
-              "merchant-portal/use-customers-data",
+              "merchant-portal/use-customers-data"
               
                 ]
               }
-              
             ]
           },
           {
