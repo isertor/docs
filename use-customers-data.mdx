@@ -1,0 +1,97 @@
+---
+title: "How to use customers’ data"
+description: "This guide explains how to manage and use customer data in Atlas, including accessing the Customers page, differences between Registered and Guest users, and downloading data for marketing and analytics."
+---
+
+## Getting started with the Customers page
+
+To visualise your customer database:
+
+1. Open Atlas Merchant Portal and tap the "☰" button in the top-left corner.
+
+2. Tap Customers. The page will look like this:
+
+![](/images/customers-date.png)
+
+On this page, you can:
+
+* Navigate using the tabs on the top-left corner to switch between **Registered** & **Guest** users
+
+* Find specific customer with the search bar
+
+* Help your customers to add a profile for them by clicking on Add customer
+
+* Download data by clicking Export to CSV
+
+* Edit customer profiles and add a "Customer tag" for them. This can be used to target specific customers in promo codes and custom dashboards
+
+<Warning>
+  If your customer database is too big, the download function could take a while or even fail. Reach out to us if that is the case, we will assist you with the download.
+</Warning>
+
+## Type of customers
+
+### Registered users
+
+Registered users are customers that created an account with your restaurant. They will do this for faster online checkouts, and to stay tuned for only-members discounts (go ahead and set one up if you have none yet!).
+
+**You can target these customers for your marketing emails/sms, if they have checked the Marketing consent box when signing up.**
+
+They will fill up the following information when signing up for an account:
+
+* Email address — *mandatory*
+
+* Contact number — *mandatory*
+
+* Name — *mandatory*
+
+* Title — *optional*
+
+* Date of birth — *optional*
+
+And you will see the following data from them:
+
+* Mobile verified: Checks if they've confirmed their phone number with an OTP
+
+* Marketing consent: Checks if customers consent to receiving exclusive discounts, seasonal specials, and latest updates via email.
+
+* Order count
+
+* Total spend
+
+To download this data: Make sure you are on the Registered users tab > Tap on Export to CSV
+
+![](/images/customer-export.png)
+A few common use cases here:
+
+* **Import the data into** [**Mailchimp**](https://mailchimp.com/) **and run your own campaigns.**&#x20;
+
+* **Run your own analytics.** Not savvy with reports? Use our [Customer Report](https://portal.atlas.kitchen/customers-report) instead. To access it, go Reports > Customer Report.
+
+<Note>
+  You might want to try [Customer.io](https://customer.io/) as emailing platform, as we have a native integration with them. Access is included with Atlas Loyalty.  Contact us to enable it.
+</Note>
+
+### Guest users
+
+Guest users are customers that might have entered some of their personal details when checking out, but did not sign up for an account with your restaurant. They will usually do this automatically as part of Apple Pay / Google Pay express checkout, or to receive an email receipt.
+
+**You cannot target these customers for your marketing emails/sms.**
+
+<Note>
+  A Registered user can decide to checkout as a Guest when purchasing from your restaurant (either online or on-premise). This will create a Guest user account for them for that session, and analytics will not be synced with their main registered account.
+</Note>
+
+## Channels where Atlas collects data
+
+These are the few channels where we collect data:
+
+| Product                                            | Collecting Guest users data                                                    | Collecting Registered users data                             |
+| -------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| Atlas Online                                       | ✅ Always                                                                       | ✅ Always                                                     |
+| Atlas Scan to Order                                | ✅ - if the customer info fields are enabled                                    | ✅ - if registered customer login is enabled                  |
+| Atlas Kiosk                                        | ✅ - if the customer info fields are enabled                                    | ✅ - if registered customer login is enabled                  |
+| Atlas POS                                          | ✅ - if restaurant staff enters customer data                                   | ✅ - if restaurant staff assigns order to registered customer |
+| Atlas Aggregator (Grabfood, Deliveroo & Foodpanda) | 🟡 - some guest data might be available if restaurant is handling the delivery | ❌ - these third-party platforms do not share customer data   |
+| Atlas KDS                                          | ❌ - NA                                                                         | ❌ - NA                                                       |
+| Atlas Dispatch                                     | ❌ - NA                                                                         | ❌ - NA                                                       |
