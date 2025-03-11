@@ -115,8 +115,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact us",
+        "href": "mailto:hello@atlas.kitchen"
       }
     ],
     "primary": {
