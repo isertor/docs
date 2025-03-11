@@ -18,15 +18,29 @@
             "pages": [
               {
             "group": "Orders",
-            "icon": "<Icon icon="check" size={32} />",
+            "icon": "bag-shopping",
             "pages": [
               "merchant-portal/refunds",
               "merchant-portal/editing-order",
-              "merchant-portal/stocks",
-              "merchant-portal/admin-orders",
-              "merchant-portal/use-customers-data"
+              "merchant-portal/admin-orders"
+                ]
+              },
+              {
+            "group": "Stocks",
+            "icon": "table",
+            "pages": [
+              "merchant-portal/stocks"
+                ]
+              },
+              {
+            "group": "Customers",
+            "icon": "users",
+            "pages": [
+              "merchant-portal/use-customers-data",
+              
                 ]
               }
+              
             ]
           },
           {
