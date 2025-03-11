@@ -14,11 +14,11 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Orders",
+            "group": "Using Atlas Merchant Portal",
             "pages": [
               {
-            "group": "Editing",
-            "icon": "pen-paintbrush",
+            "group": "Orders",
+            "icon": "<Icon icon="check" size={32} />",
             "pages": [
               "merchant-portal/refunds",
               "merchant-portal/editing-order",
