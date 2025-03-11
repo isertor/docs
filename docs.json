@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Atlas Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5046e5",
+    "light": "#e1e1f5",
+    "dark": "#2d305c"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,23 +14,33 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Using Atlas Merchant Portal",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "merchant-portal/refunds",
+              "merchant-portal/editing-order",
+              "merchant-portal/stocks",
+              "merchant-portal/admin-orders",
+              "merchant-portal/use-customers-data"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Using Atlas Products",
             "pages": [
-              "essentials/refunds",
-              "essentials/editing-order",
-              "essentials/admin-orders",
-              "essentials/stocks",
-              "essentials/revel-setup",
-              "essentials/diners-phone-update",
-              "essentials/pos-layout-setup"
+              
+            ]
+          },
+          {
+            "group": "Configuring Atlas",
+            "pages": [
+              "configuring-atlas/create-menus",
+              "configuring-atlas/pos-layout-setup",
+              "configuring-atlas/revel-setup"
+            ]
+          },
+          {
+            "group": "Others",
+            "pages": [
+              "others/diners-phone-update"
             ]
           }
         ]
@@ -62,8 +72,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/atlas-for-light.svg",
+    "dark": "/logo/atlas-for-dark.svg"
   },
   "navbar": {
     "links": [
