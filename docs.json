@@ -121,14 +121,14 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Go to Atlas Merchant Portal",
+      "label": "Log in",
       "href": "https://portal.atlas.kitchen"
     }
   },
   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/eatwithatlas",
-      "email": "mailto:hello@atlas.kitchen"
+      "website": "https://atlas.kitchen"
     }
   }
 }
