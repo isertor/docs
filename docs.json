@@ -10,9 +10,6 @@
     "fonts": {
         "family": "Poppins"
     },
-    "icons": {
-    "library": "fontawesome"
-},
     "favicon": "/favicon.svg",
     "navigation": {
         "tabs": [
@@ -89,7 +86,7 @@
                             "others/printers"
                         ]
                     },
-                  {
+                    {
                         "group": "Others",
                         "pages": [
                             "others/diners-phone-update"
