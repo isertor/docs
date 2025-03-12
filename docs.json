@@ -96,11 +96,6 @@
           "icon": "globe"
         },
         {
-          "anchor": "Documentation",
-          "href": "https://help.atlas.kitchen",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
           "href": "https://atlaskitchen.notion.site/atlas-blog",
           "icon": "blog"
