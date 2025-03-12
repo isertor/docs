@@ -14,8 +14,12 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Introduction",
-            "pages": ["intro/intro"]
+            "group": "Welcome to Atlas",
+            "pages": ["welcome-to-atlas"]
+              },
+          {
+            "group": "Get started",
+            "pages": ["get-started/onboarding","get-started/installing-atlas", "get-started/set-up-atlas-to-sell-more"]
               },
           {
             "group": "Using Atlas Merchant Portal",
