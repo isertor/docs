@@ -77,21 +77,14 @@
                                 "pages": [
                                     "configuring-atlas/outlet-settings"
                                 ]
-                            },
-                            {
-                                "group": "Others",
-                                "pages": [
-                                    "others/diners-phone-update",
-                                    "others/printers"
-                                ]
                             }
                         ]
                     },
                     {
                         "group": "Hardware",
                         "pages": [
-                            "hardware/diners-phone-update",
-                            "hardware/printers"
+                            "others/diners-phone-update",
+                            "others/printers"
                         ]
                     }
                 ]
