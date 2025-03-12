@@ -17,7 +17,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Welcome to Atlas",
+            "group": " ",
             "pages": ["welcome-to-atlas"]
           },
           {
@@ -61,12 +61,12 @@
               {
                 "group": "Marketing tools",
                 "icon": "megaphone",
-                "pages": ["configuring-atlas/marketing-tools"]
+                "pages": [" "]
               },
               {
                 "group": "Outlet settings",
                 "icon": "shop",
-                "pages": ["configuring-atlas/outlet-settings"]
+                "pages": [" "]
               }
             ]
           },
