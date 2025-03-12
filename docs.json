@@ -15,8 +15,7 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": [
-                ]
+            "pages": ["intro/intro"]
               },
           {
             "group": "Using Atlas Merchant Portal",
