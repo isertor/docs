@@ -25,7 +25,7 @@
             "pages": ["get-started/onboarding","get-started/installing-atlas", "get-started/set-up-atlas-to-sell-more"]
               },
           {
-            "group": "Using Atlas Merchant Portal",
+            "group": "Atlas Merchant Portal",
             "pages": [
               {
                 "group": "Orders",
@@ -49,16 +49,7 @@
                 "pages": [
                   "merchant-portal/use-customers-data"
                 ]
-              }
-            ]
-          },
-          {
-            "group": "Using Atlas Products",
-            "pages": []
-          },
-          {
-            "group": "Configuring Atlas",
-            "pages": [
+              },
               {
                 "group": "Menus",
                 "icon": "file",
@@ -79,6 +70,15 @@
               },
               {
                 "group": "Others",
+                "pages": [
+                  "others/diners-phone-update",
+                  "others/printers"
+                ]
+              }
+            ]
+          },
+              {
+                "group": "Hardware",
                 "pages": [
                   "others/diners-phone-update",
                   "others/printers"
