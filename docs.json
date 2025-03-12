@@ -10,6 +10,7 @@
     "fonts": {
         "family": "Poppins"
     },
+    "icons": "heroicons",
     "favicon": "/favicon.svg",
     "navigation": {
         "tabs": [
