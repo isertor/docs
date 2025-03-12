@@ -83,8 +83,13 @@
                     {
                         "group": "Hardware",
                         "pages": [
-                            "others/diners-phone-update",
                             "others/printers"
+                        ]
+                    },
+                  {
+                        "group": "Others",
+                        "pages": [
+                            "others/diners-phone-update"
                         ]
                     }
                 ]
