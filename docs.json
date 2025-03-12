@@ -17,13 +17,17 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": " ",
+            "group": "Welcome to Atlas",
             "pages": ["welcome-to-atlas"]
-              },
+          },
           {
             "group": "Get started",
-            "pages": ["get-started/onboarding","get-started/installing-atlas", "get-started/set-up-atlas-to-sell-more"]
-              },
+            "pages": [
+              "get-started/onboarding",
+              "get-started/installing-atlas",
+              "get-started/set-up-atlas-to-sell-more"
+            ]
+          },
           {
             "group": "Atlas Merchant Portal",
             "pages": [
@@ -39,16 +43,12 @@
               {
                 "group": "Stocks",
                 "icon": "table",
-                "pages": [
-                  "merchant-portal/stocks"
-                ]
+                "pages": ["merchant-portal/stocks"]
               },
               {
                 "group": "Customers",
                 "icon": "users",
-                "pages": [
-                  "merchant-portal/use-customers-data"
-                ]
+                "pages": ["merchant-portal/use-customers-data"]
               },
               {
                 "group": "Menus",
@@ -61,12 +61,12 @@
               {
                 "group": "Marketing tools",
                 "icon": "megaphone",
-                "pages": []
+                "pages": ["configuring-atlas/marketing-tools"]
               },
               {
                 "group": "Outlet settings",
                 "icon": "shop",
-                "pages": []
+                "pages": ["configuring-atlas/outlet-settings"]
               },
               {
                 "group": "Others",
@@ -77,13 +77,11 @@
               }
             ]
           },
-              {
-                "group": "Hardware",
-                "pages": [
-                  "others/diners-phone-update",
-                  "others/printers"
-                ]
-              }
+          {
+            "group": "Hardware",
+            "pages": [
+              "hardware/diners-phone-update",
+              "hardware/printers"
             ]
           }
         ]
@@ -93,13 +91,12 @@
         "groups": [
           {
             "group": "Revel POS integration",
-            "pages": [
-              "configuring-atlas/revel-setup"
-            ]
+            "pages": ["configuring-atlas/revel-setup"]
           }
         ]
       }
-    ],
+    ]
+  },
     "global": {
       "anchors": [
         {
