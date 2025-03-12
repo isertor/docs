@@ -1,86 +1,147 @@
 {
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Welcome to Atlas",
-            "pages": ["welcome-to-atlas"]
-          },
-          {
-            "group": "Get started",
-            "pages": [
-              "get-started/onboarding",
-              "get-started/installing-atlas",
-              "get-started/set-up-atlas-to-sell-more"
-            ]
-          },
-          {
-            "group": "Atlas Merchant Portal",
-            "pages": [
-              {
-                "group": "Orders",
-                "icon": "bag-shopping",
-                "pages": [
-                  "merchant-portal/refunds",
-                  "merchant-portal/editing-order",
-                  "merchant-portal/admin-orders"
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Atlas Help Center",
+    "colors": {
+        "primary": "#FF3279",
+        "light": "#FFA3C3",
+        "dark": "#D72865"
+    },
+    "fonts": {
+        "family": "Poppins"
+    },
+    "favicon": "/favicon.svg",
+    "navigation": {
+        "tabs": [
+            {
+                "tab": "Guides",
+                "groups": [
+                    {
+                        "group": "",
+                        "pages": [
+                            "welcome-to-atlas"
+                        ]
+                    },
+                    {
+                        "group": "Get started",
+                        "pages": [
+                            "get-started/onboarding",
+                            "get-started/installing-atlas",
+                            "get-started/set-up-atlas-to-sell-more"
+                        ]
+                    },
+                    {
+                        "group": "Atlas Merchant Portal",
+                        "pages": [
+                            {
+                                "group": "Orders",
+                                "icon": "bag-shopping",
+                                "pages": [
+                                    "merchant-portal/refunds",
+                                    "merchant-portal/editing-order",
+                                    "merchant-portal/admin-orders"
+                                ]
+                            },
+                            {
+                                "group": "Stocks",
+                                "icon": "table",
+                                "pages": [
+                                    "merchant-portal/stocks"
+                                ]
+                            },
+                            {
+                                "group": "Customers",
+                                "icon": "users",
+                                "pages": [
+                                    "merchant-portal/use-customers-data"
+                                ]
+                            },
+                            {
+                                "group": "Menus",
+                                "icon": "file",
+                                "pages": [
+                                    "configuring-atlas/create-menus",
+                                    "configuring-atlas/pos-layout-setup"
+                                ]
+                            },
+                            {
+                                "group": "Marketing tools",
+                                "icon": "megaphone",
+                                "pages": [
+                                    "configuring-atlas/marketing-tools"
+                                ]
+                            },
+                            {
+                                "group": "Outlet settings",
+                                "icon": "shop",
+                                "pages": [
+                                    "configuring-atlas/outlet-settings"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "group": "Hardware",
+                        "pages": [
+                            "others/printers"
+                        ]
+                    },
+                    {
+                        "group": "Others",
+                        "pages": [
+                            "others/diners-phone-update"
+                        ]
+                    }
                 ]
-              },
-              {
-                "group": "Stocks",
-                "icon": "table",
-                "pages": ["merchant-portal/stocks"]
-              },
-              {
-                "group": "Customers",
-                "icon": "users",
-                "pages": ["merchant-portal/use-customers-data"]
-              },
-              {
-                "group": "Menus",
-                "icon": "file",
-                "pages": [
-                  "configuring-atlas/create-menus",
-                  "configuring-atlas/pos-layout-setup"
+            },
+            {
+                "tab": "Integrations",
+                "groups": [
+                    {
+                        "group": "Revel POS integration",
+                        "pages": [
+                            "configuring-atlas/revel-setup"
+                        ]
+                    }
                 ]
-              },
-              {
-                "group": "Marketing tools",
-                "icon": "megaphone",
-                "pages": ["configuring-atlas/marketing-tools"]
-              },
-              {
-                "group": "Outlet settings",
-                "icon": "shop",
-                "pages": ["configuring-atlas/outlet-settings"]
-              } 
-            ]
-          },
-          {
-            "group": "Hardware",
-            "pages": [
-              "others/printers"
-            ]
-          },
-          {
-            "group": "Others",
-            "pages": [
-              "others/diners-phone-update"
-                ]
-              }
+            }
         ]
-      },
-      {
-        "tab": "Integrations",
-        "groups": [
-          {
-            "group": "Revel POS integration",
-            "pages": ["configuring-atlas/revel-setup"]
-          }
+    },
+    "global": {
+        "anchors": [
+            {
+                "anchor": "Website",
+                "href": "https://atlas.kitchen",
+                "icon": "globe"
+            },
+            {
+                "anchor": "Blog",
+                "href": "https://atlaskitchen.notion.site/atlas-blog",
+                "icon": "blog"
+            }
         ]
-      }
-    ]
-  }
+    },
+    "logo": {
+        "light": "/logo/atlas-for-light.svg",
+        "dark": "/logo/atlas-for-dark.svg"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Contact us",
+                "href": "mailto:hello@atlas.kitchen"
+            }
+        ],
+        "primary": {
+            "type": "button",
+            "label": "Log in",
+            "href": "https://portal.atlas.kitchen"
+        }
+    },
+    "footer": {
+        "socials": {
+            "instagram": "https://www.instagram.com/eatwithatlas",
+            "website": "https://atlas.kitchen"
+        }
+    }
 }
