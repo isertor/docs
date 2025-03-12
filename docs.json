@@ -8,8 +8,7 @@
     "dark": "#D72865"
   },
   "fonts": {
-    "family": "Poppins",
-    "source": "https://fonts.google.com/specimen/Poppins"
+    "family": "Poppins"
   },
   "favicon": "/favicon.svg",
   "navigation": {
