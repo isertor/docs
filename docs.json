@@ -77,7 +77,8 @@
               {
                 "group": "Others",
                 "pages": [
-                  "others/diners-phone-update"
+                  "others/diners-phone-update",
+                  "others/printers"
                 ]
               }
             ]
