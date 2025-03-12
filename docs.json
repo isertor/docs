@@ -7,8 +7,8 @@
     "light": "#FFA3C3",
     "dark": "#D72865"
   },
-  "fonts":{
-    "family": "Poppins",
+  "fonts": {
+    "family": "sans-serif",
     "source": "https://fonts.google.com/specimen/Poppins"
   },
   "favicon": "/favicon.svg",
