@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Atlas Help Center",
   "colors": {
-    "primary": "#5046e5",
-    "light": "#e1e1f5",
-    "dark": "#443CCF"
+    "primary": "#FF3279",
+    "light": "#FFA3C3",
+    "dark": "#D72865"
   },
   "favicon": "/favicon.svg",
   "navigation": {
