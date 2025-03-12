@@ -15,10 +15,9 @@
     "tabs": [
       {
         "tab": "Guides",
-        "pages": "welcome-to-atlas"
         "groups": [
           {
-            "group": "Welcome to Atlas",
+            "group": " ",
             "pages": ["welcome-to-atlas"]
               },
           {
