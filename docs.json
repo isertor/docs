@@ -25,12 +25,19 @@
             "pages": [
               "get-started/onboarding",
               "get-started/installing-atlas",
-              "get-started/set-up-atlas-to-sell-more"
+              "get-started/sell-more"
             ]
           },
           {
             "group": "Atlas Merchant Portal",
             "pages": [
+              {
+                "group": "Stations",
+                "icon": "server",
+                "pages": [
+                  " "
+                ]
+              },
               {
                 "group": "Orders",
                 "icon": "bag-shopping",
@@ -51,11 +58,10 @@
                 "pages": ["merchant-portal/use-customers-data"]
               },
               {
-                "group": "Menus",
-                "icon": "file",
+                "group": "Reports",
+                "icon": "file-contract",
                 "pages": [
-                  "configuring-atlas/create-menus",
-                  "configuring-atlas/pos-layout-setup"
+                  " "
                 ]
               },
               {
@@ -64,8 +70,21 @@
                 "pages": [" "]
               },
               {
+                "group": "Menu builder",
+                "icon": "file",
+                "pages": [
+                  "configuring-atlas/create-menus",
+                  "configuring-atlas/pos-layout-setup"
+                ]
+              },
+              {
                 "group": "Outlet settings",
                 "icon": "shop",
+                "pages": [" "]
+              },
+              {
+                "group": "Settings",
+                "icon": "gear",
                 "pages": [" "]
               }
             ]
