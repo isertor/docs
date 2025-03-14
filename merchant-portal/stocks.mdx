@@ -6,54 +6,49 @@ description: "This guide explains how to manage restaurant stocks in Atlas, incl
 <Info>
   Who is this guide for?
 
-  * Atlas users with any permissions. Set permissions from **Settings > Team members**.
-
-  * Users managing orders from Atlas POS, Scan to Order, Kiosk, Online, or Aggregator platforms.
+  - Atlas users with any permissions. Set permissions from **Settings > Team members**.
+  - Users managing orders from Atlas POS, Scan to Order, Kiosk, Online, or Aggregator platforms.
 </Info>
 
 ## Before you begin
 
 From Atlas you can handle all your restaurant stocks in one place, and block or 86 products to avoid operational issues. The Stocks page works across all Atlas products:
 
-* Atlas POS
-
-* Atlas Online
-
-* Atlas Scan to Order
-
-* Atlas Kiosk
-
-* Atlas Aggregator (integrating with all your 3rd party platform stocks)
+- Atlas POS
+- Atlas Online
+- Atlas Scan to Order
+- Atlas Kiosk
+- Atlas Aggregator (integrating with all your 3rd party platform stocks)
 
 ![](/images/stocks-date-outlet.png)
 
-If you have multiple outlets, always make sure to be in the correct outlet and the correct date. This is automatically set to the current date at your default outlet.
+If you have multiple outlets, please make sure to be in the correct outlet and date. This is automatically set to the current date at your default outlet.
 
 ## How to block and unblock items
 
 Follow these steps to block or unblock items in the Stocks page to manage availability and prevent operational issues:
 
 <Steps>
-  <Step title="Open the side bar menu, and tap on &#x22;Stocks&#x22;">
+  <Step title='Open the side bar menu > Tap "Stocks".'>
     ![](/images/side-bar-stocks.png)
+
+    the .
   </Step>
-
-  <Step title="Find the item by using the filters, search bar or just scrolling">
-    * Tip: If you want to select the "Sections" filter, please choose a menu from the "Menu" filter first.
+  <Step title="Find the item by using the filters, search bar or just scrolling.">
+    - Tip: If you want to select the "Sections" filter, please first choose a menu from the "Menu" filter.
   </Step>
-
-  <Step title="Tap on the &#x22;Block&#x22; dropdown">
-
+  <Step title='Tap the "Block" dropdown.'>
+    
   </Step>
-
-  <Step title="Tap on the different options to: &#x22;Block today&#x22;, &#x22;indefinitely&#x22; or &#x22;until a date&#x22;">
+  <Step title='Tap the different options to: "Block today", "indefinitely" or "until a date".'>
     ![](/images/blocking-options.png)
   </Step>
-
-  <Step title="&#x22;Blocked&#x22; items will display at the top of your screen" />
+  <Step title='"Blocked" items will display at the top of your screen.'>
+    
+  </Step>
 </Steps>
 
-Items that are blocked today or until a date will remain blocked for that period, and unblock automatically after that. For items you have blocked indefinitely, just tap on "Unblock" to manually make them available again.
+Items blocked today or until a date will remain blocked for that period, and will unblock automatically after that. For items you have blocked indefinitely, tap  "Unblock" to manually make them available again.
 
 ![](/images/unblock-items.webp)
 
@@ -62,23 +57,27 @@ Items that are blocked today or until a date will remain blocked for that period
 Use these steps to set and update product quantities, ensuring accurate stock tracking and automatic deductions:
 
 <Steps>
-  <Step title="Open the side bar menu, and tap on &#x22;Stocks&#x22;" />
-
-  <Step title="Find the item by using the filters, search bar or just scrolling" />
-
-  <Step title="Tap on the &#x22;Set quantity&#x22; button" />
-
-  <Step title="Tap on the different options to: &#x22;Set remaining quantity left&#x22; or &#x22;total quantity&#x22;">
-    * "Set remaining quantity left", sets the remaining quantity left to be sold for this period. It does not take into account any existing pre-orders.
-
-    * "Set total quantity", sets the total quantity to be sold for this period, including any pre-sold stocks already booked. You will see a remaining quantity left calculation too.
+  <Step title='Open the side bar menu, and tap "Stocks".'>
+    
+  </Step>
+  <Step title='Find the item by using the filters, search bar or just scrolling'.>
+    
+  </Step>
+  <Step title='Tap "Set quantity".'>
+    
+  </Step>
+  <Step title='Tap the different options to: "Set remaining quantity left" or "total quantity".'>
+    - "Set remaining quantity left", sets the remaining quantity left to be sold for this period. It does not take into account any existing pre-orders.
+    - "Set total quantity", sets the total quantity to be sold for this period, including any pre-sold stocks already booked. You will see a remaining quantity left calculation too.
 
     ![](/images/set-quantity-2.png)
   </Step>
-
-  <Step title="Choose the &#x22;Date range&#x22;, and the &#x22;Quantity&#x22;" />
-
-  <Step title="Tap on &#x22;Set&#x22;" />
+  <Step title='Choose the "Date range", and the "Quantity".'>
+    
+  </Step>
+  <Step title='Tap "Set".'>
+    
+  </Step>
 </Steps>
 
 Your quantities will now deduct automatically after each order, and once they reach 0, the item will become "Blocked".
@@ -87,13 +86,10 @@ If you need to manually update a quantity in the meantime, follow the same steps
 
 ## Setting quantities for GrabFood, Foodpanda and Deliveroo
 
-* Even if you set quantities on Atlas for these integrated platforms, you might still receive an order with more items than you had left.
-
-* These platforms don't read from Atlas what quantity is left, and will assume you always have stock, unless the item is "Blocked".
-
-* If an order with an item quantity higher than the current one comes from one of these aggregators, Atlas will block the item immediately.
-
-* This is an edge case that only happens for these three integrated platforms with quantities set.
+- Even if you set quantities on Atlas for these integrated platforms, you might still receive an order with more items than you had left.
+- These platforms don't read from Atlas what quantity is left, and will assume you always have stock, unless the item is "Blocked".
+- If an order with an item quantity higher than the current one comes from one of these aggregators, Atlas will block the item immediately.
+- This is an edge case that only happens for these three integrated platforms with quantities set.
 
 ## Blocking items for GrabFood, Foodpanda and Deliveroo
 
@@ -101,14 +97,9 @@ If you need to manually update a quantity in the meantime, follow the same steps
   **Make sure to block items only from Atlas, and not from these platforms instead. Doing so might compromise the sync, and aggregator orders might stop syncing to Atlas.**
 </Warning>
 
-* Even if you block an item synced to one of these Aggregator platforms from Atlas, there might be an edge case when an order comes with the item.
-
-* If that happens, you can manually verify on your aggregator store that the item is blocked. If not, please report it to our team via our WhatsApp group chat.
-
-* This is the edge case when this could happen:
-
-  * Some of these platforms will only send orders to Atlas once they have a driver assigned for them.
-
-  * During peak times, that might result on orders being sent to you a lot later that they were placed by your diners.
-
-  * This could lead to an scenario where your customer placed an order 1h ago, when the item was available, but only sent to use once the item is unavailable.
+- Even if you block an item synced to one of these Aggregator platforms from Atlas, an edge case might occur when an order comes with the item.
+- If that ever happens, you can manually verify that the item is blocked on your aggregator store. If not, please report it to our team via our WhatsApp group chat.
+- This is the edge case when this could happen:
+  - Some of these platforms will only send orders to Atlas once they have a driver assigned for them.
+  - During peak times, that might result in orders being sent to you a lot later than they were placed by your diners.
+  - This might lead to a scenario where your customer placed an order 1h ago, when the item was available, but only sent to you after the item is unavailable.
