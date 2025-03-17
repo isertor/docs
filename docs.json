@@ -107,7 +107,11 @@
             "pages": ["configuring-atlas/revel-setup"]
           }
         ]
-      }
+      },
+      {
+        "tab": "Integrations",
+        "href": "https://docs.atlas.kitchen"
+            }
     ]
   },
   "global": {
