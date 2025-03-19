@@ -55,7 +55,7 @@
               {
                 "group": "Customers",
                 "icon": "users",
-                "pages": ["merchant-portal/use-customers-data"]
+                "pages": ["merchant-portal/customers-data"]
               },
               {
                 "group": "Reports",
