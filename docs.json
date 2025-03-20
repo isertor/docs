@@ -129,8 +129,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/atlas-for-light.svg",
-    "dark": "/logo/atlas-for-dark.svg"
+    "light": "/logo/atlas-logo-for-light.svg",
+    "dark": "/logo/atlas-logo-for-dark.svg"
   },
   "navbar": {
     "links": [
