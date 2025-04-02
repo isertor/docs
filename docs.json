@@ -68,7 +68,7 @@
               {
                 "group": "Marketing tools",
                 "icon": "megaphone",
-                "pages": [" "]
+                "pages": ["merchant-portal/add-discounts"]
               },
               {
                 "group": "Menu builder",
@@ -81,12 +81,12 @@
               {
                 "group": "Outlet settings",
                 "icon": "shop",
-                "pages": [" "]
+                "pages": ["merchant-portal/operating-hours"]
               },
               {
                 "group": "Settings",
                 "icon": "gear",
-                "pages": ["merchant-portal/add-discounts"]
+                "pages": [" "]
               }
             ]
           },
