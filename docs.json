@@ -42,9 +42,10 @@
                 "group": "Orders",
                 "icon": "bag-shopping",
                 "pages": [
-                  "merchant-portal/refunds",
+                  "merchant-portal/admin-orders",
                   "merchant-portal/editing-order",
-                  "merchant-portal/admin-orders"
+                  "merchant-portal/refunds"
+                  
                 ]
               },
               {
