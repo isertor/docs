@@ -86,7 +86,7 @@
               {
                 "group": "Settings",
                 "icon": "gear",
-                "pages": [" "]
+                "pages": ["merchant-portal/add-discounts"]
               }
             ]
           },
