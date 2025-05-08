@@ -1,0 +1,82 @@
+---
+title: "How to set up Deliveroo integration"
+description: "This guide walks you through connecting Atlas to Deliveroo Partner Hub: adding your sites, syncing menus, turning on the Orders API, and verifying everything is live."
+---
+
+## Step 1 – Open the **Integrations** page
+
+1. Log in to **Deliveroo Partner Hub**.
+2. In the left-hand sidebar click **Integrations**.
+
+## Step 2 – Begin the connection
+
+- Click **Connect sites**.
+  ![Dev Step4 Pn](/images/dev-step4.png)
+
+## Step 3 – Select **Atlas** as your POS
+
+- In _Which POS system do you use?_ search for **Atlas** and select it.
+  ![Dev Step5 Pn](/images/dev-step5.png)
+
+## Step 4 – Link each outlet
+
+For every site you're integrating:
+
+- Enter its **Site location ID** (the 5-digit number shown next to your outlet name in Partner Hub).
+- Under _Do you want to update your menus through your till?_ choose **Yes – I'll update my menu through my till (POS)**.
+
+![Dev Step6 Pn](/images/dev-step6.png)
+
+<Info>
+  If your brand has multiple Deliveroo sites, repeat this step for each one.
+</Info>
+
+## Step 5 – Copy & share your IDs
+
+- A **Brand ID** appears on the next screen.
+- Copy both the **Brand ID** and each **Site location ID** and send them to your Atlas onboarding manager.
+
+![Clean Shot2025 05 08at10 36 30@2x Pn](/images/CleanShot2025-05-08at10.36.30@2x.png)
+
+## Step 6 – After your menu is synced, turn on order flow
+
+Atlas will set up the integration for you and let you know when it's ready. It will take us 1-2 business days. Once that is done:
+
+1. Click **Check menu status** to confirm the upload.
+2. Click **Connect your Orders (POS)** to start receiving Deliveroo orders directly in Atlas.
+   ![Dev Step8 Pn](/images/dev-step8.png)
+
+## Step 7 – Verify everything is live
+
+- Back on the Integrations summary make sure all three tags are **green** for each site:
+
+  | Tag             | Meaning              |
+  | --------------- | -------------------- |
+  | **Menu**        | Menu API connected   |
+  | **POS**         | Orders API connected |
+  | **Site Detail** | Site metadata synced |
+
+If any tag is orange, wait 20-30 minutes and refresh. Still orange? Reach out to Atlas support.
+
+![Dev Step9 Pn](/images/dev-step9.png)
+
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="How long does the initial menu sync take?">
+    Usually under 5 minutes, but large menus may take up to 15 minutes.
+  </Accordion>
+  <Accordion title="Can I keep editing menus in Deliveroo Menu Manager?" defaultOpen="false">
+    No. Once you choose **Yes – I'll update my menu through my till (POS)**, Menu Manager is disabled for that site. Make all edits in Atlas instead.
+  </Accordion>
+  <Accordion title="What if my Brand ID or Site ID is wrong?" defaultOpen="false">
+    Disconnect the site in Partner Hub, reconnect it, and enter the correct IDs. Then resend the details to Atlas.
+  </Accordion>
+</AccordionGroup>
+
+### Need help?
+
+- **Atlas support** – via your designated group chat, or via email at [**hello@atlas.kitchen**](mailto:hello@atlas.kitchen)
+- **Deliveroo Partner Hub help desk** – see the Help tab inside Partner Hub
+
+You're all set\! Your menus live in Atlas and new Deliveroo orders will now print and appear automatically in Atlas.
