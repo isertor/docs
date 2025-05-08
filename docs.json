@@ -106,6 +106,10 @@
           {
             "group": "Revel POS integration",
             "pages": ["configuring-atlas/revel-setup"]
+          },
+          {
+            "group": "Deliveroo integration",
+            "pages": ["configuring-atlas/deliveroo-integration"]
           }
         ]
       },
