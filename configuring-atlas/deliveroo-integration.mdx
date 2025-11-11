@@ -10,13 +10,11 @@ description: "This guide walks you through connecting Atlas to Deliveroo Partner
 
 ## Step 2 – Begin the connection
 
-- Click **Connect sites**.
-  ![Dev Step4 Pn](/images/dev-step4.png)
+- Click **Connect sites**. <img src="/images/dev-step4.png" alt="Dev Step4 Pn" />
 
 ## Step 3 – Select **Atlas** as your POS
 
-- In _Which POS system do you use?_ search for **Atlas** and select it.
-  ![Dev Step5 Pn](/images/dev-step5.png)
+- In _Which POS system do you use?_ search for **Atlas** and select it. <img src="/images/dev-step5.png" alt="Dev Step5 Pn" />
 
 ## Step 4 – Link each outlet
 
@@ -43,8 +41,7 @@ For every site you're integrating:
 Atlas will set up the integration for you and let you know when it's ready. It will take us 1-2 business days. Once that is done:
 
 1. Click **Check menu status** to confirm the upload.
-2. Click **Connect your Orders (POS)** to start receiving Deliveroo orders directly in Atlas.
-   ![Dev Step8 Pn](/images/dev-step8.png)
+2. Click **Connect your Orders (POS)** to start receiving Deliveroo orders directly in Atlas. <img src="/images/dev-step8.png" alt="Dev Step8 Pn" />
 
 ## Step 7 – Verify everything is live
 
@@ -60,6 +57,30 @@ If any tag is orange, wait 20-30 minutes and refresh. Still orange? Reach out to
 
 ![Dev Step9 Pn](/images/dev-step9.png)
 
+## Common problems & troubleshooting
+<AccordionGroup>
+  <Accordion title="Quick checks (fix most issues)">
+    - **Site location ID** matches the number next to your site name in brackets in your Deliveroo terminal.
+    - The **Brand ID** you shared with Atlas is the one shown on Deliveroo's page during the integration set up process.
+    - **Menu / POS / Site Detail** tags are all **green** on Deliveroo. Reload this page to double-check.
+    - A **banner/hero image** exists in the Atlas menu you are trying to sync.
+    If any are wrong, disconnect the site on Deliveroo Partner's Hub, reconnect, and re-share the correct IDs with Atlas.
+  </Accordion>
+  <Accordion title="Menu tag is orange or stuck on Deliveroo">
+    - Confirm with Atlas that the integration team has already set up the integration (we will inform you when done)
+    - Make sure you chose **“Yes – I’ll update my menu through my till (POS)”** when setting up the integration. You might disconnect the site, and start from scracth.
+    - Click **Check menu status**.
+    - Add required **banner image** in your menu on Atlas.
+    - Large menus can take up to **15 min** to publish
+  </Accordion>
+    <Accordion title="I entered the wrong IDs">
+    Disconnect the site, reconnect, enter the correct **Site location ID**, confirm the **Brand ID**, and re-share them with Atlas if anything changed. Once Atlas has reconfigured the set up, tags should turn **green** within **20–30 min**.
+  </Accordion>
+  <Accordion title="What info helps support resolve faster?">
+    Send **Brand ID**, **Site location ID(s)**, a screenshot of the **Integrations** summary (showing tag colors), the **time** of a test order, and any recent changes you made.
+  </Accordion>
+</AccordionGroup>
+
 ## FAQs
 
 <AccordionGroup>
@@ -72,6 +93,9 @@ If any tag is orange, wait 20-30 minutes and refresh. Still orange? Reach out to
   <Accordion title="What if my Brand ID or Site ID is wrong?" defaultOpen="false">
     Disconnect the site in Partner Hub, reconnect it, and enter the correct IDs. Then resend the details to Atlas.
   </Accordion>
+  <Accordion title="How do I connect multiple sites under one brand?">
+    Add **each site** separately and capture **each** Site location ID. All three tags must be **green** for every site on your integrations page.
+  </Accordion>
 </AccordionGroup>
 
 ### Need help?
@@ -79,4 +103,4 @@ If any tag is orange, wait 20-30 minutes and refresh. Still orange? Reach out to
 - **Atlas support** – via your designated group chat, or via email at [**hello@atlas.kitchen**](mailto:hello@atlas.kitchen)
 - **Deliveroo Partner Hub help desk** – see the Help tab inside Partner Hub
 
-You're all set\! Your menus live in Atlas and new Deliveroo orders will now print and appear automatically in Atlas.
+You're all set! Your menus live in Atlas and new Deliveroo orders will now print and appear automatically in Atlas.
