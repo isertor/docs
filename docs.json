@@ -68,7 +68,7 @@
               {
                 "group": "Marketing tools",
                 "icon": "megaphone",
-                "pages": ["merchant-portal/add-discounts"]
+                "pages": ["merchant-portal/add-discounts","merchant-portal/discount-use-cases"]
               },
               {
                 "group": "Menu builder",

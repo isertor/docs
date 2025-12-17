@@ -20,28 +20,34 @@ Once you create a discount, customers can apply it using a promo code at checkou
 
 <Steps>
   <Step title="Go to Marketing Tools > Discounts">
-    Open the sidebar menu and navigate to **Marketing Tools > Discounts**.
-    <img src="/images/discount-1.webp" alt="Navigate to discounts" />
+    Open the sidebar menu and navigate to **Marketing Tools \> Discounts**.
+
+    ![Navigate to discounts](/images/discount-1.webp)
   </Step>
   <Step title='Click "Add Discount"'>
     In the top-right corner, click **Add Discount**.
-    <img src="/images/discount-2.webp" alt="Add discount button" />
+
+    ![Add discount button](/images/discount-2.webp)
   </Step>
   <Step title="Choose a discount type">
     Select the type from the left panel. See [Discount types](#discount-types) below for guidance.
-    <img src="/images/discount-3.webp" alt="Select discount type" />
+
+    ![Select discount type](/images/discount-3.webp)
   </Step>
   <Step title="Configure settings">
     Fill in the name, value, and dates on the right panel.
-    <img src="/images/discount-4.webp" alt="Configure discount settings" />
+
+    ![Configure discount settings](/images/discount-4.webp)
   </Step>
   <Step title="Add conditions (optional)">
     Scroll to **Discount conditions** to specify who can use this discount and when.
-    <img src="/images/discount-5.webp" alt="Add conditions" />
+
+    ![Add conditions](/images/discount-5.webp)
   </Step>
   <Step title='Click "Save"'>
     Your discount is now active and ready to use.
-    <img src="/images/discount-6.webp" alt="Save discount" />
+
+    ![Save discount](/images/discount-6.webp)
   </Step>
 </Steps>
 
@@ -55,39 +61,25 @@ Atlas offers several discount types. Choose based on what you want to discount a
 
 These discounts reduce the total price of an order.
 
-**Sub-total discount** is the most common choice. It reduces the order amount before delivery fees, surcharges, and taxes are added. Use this for most promotions like "&#36;5 off orders over &#36;30" or "15% off your order".
-
-**Total discount** reduces the order amount after fees and surcharges, but before tax. Use this when you want the discount to apply to surcharges too.
-
-**Cash voucher** reduces the final payable amount, including taxes. This works like a gift card — a &#36;20 voucher covers exactly &#36;20 of the final bill.
-
-**Delivery fee discount** reduces or removes the delivery fee. Use this for delivery promotions like "Free delivery for orders over &#36;25".
+- **Sub-total discount** is the most common choice. It reduces the order amount before delivery fees, surcharges, and taxes are added. Use this for most promotions like "\$5 off orders over \$30" or "15% off your order".
+- **Total discount** reduces the order amount after fees and surcharges, but before tax. Use this when you want the discount to apply to surcharges too.
+- **Cash voucher** reduces the final payable amount, including taxes. This works like a gift card — a \$20 voucher covers exactly \$20 of the final bill.
+- **Delivery fee discount** reduces or removes the delivery fee. Use this for delivery promotions like "Free delivery for orders over \$25".
 
 ### Item-level discounts
 
 These discounts reduce the price of specific items rather than the whole order.
 
-**Individual item discount** lets staff manually select which item to discount at the POS. Useful for service recovery when a manager wants to comp a guest's appetizer.
-
-**Per eligible item discount** automatically discounts all items that match your criteria. For example, "20% off all desserts" discounts every dessert in the cart.
-
-**Lowest eligible item discount** automatically discounts only the cheapest item that matches your criteria. For example, "Cheapest pizza free when you order 3 or more".
-
-**Discount last Y items every N items** is for buy-one-get-one promotions. Set Y=1 and N=2 to create a "Buy 1 beer, get 1 free" deal.
+- **Individual item discount** lets staff manually select which item to discount at the POS. Useful for service recovery when a manager wants to comp a guest's appetizer.
+- **Per eligible item discount** automatically discounts all items that match your criteria. For example, "20% off all desserts" discounts every dessert in the cart.
+- **Lowest eligible item discount** automatically discounts only the cheapest item that matches your criteria. For example, "Cheapest pizza free when you order 3 or more".
+- **Discount last Y items every N items** is for buy-one-get-one promotions. Set Y=1 and N=2 to create a "Buy 1 beer, get 1 free" deal.
 
 Note that **Per eligible** and **Lowest eligible** discounts must be paired with the condition "Cart items include either one of". And **Last Y every N** discounts must be paired with "User or product tags include". See [Discount conditions](#discount-conditions) for details.
 
 ### Stacking rules
 
-You can combine one order-level discount with one item-level discount on the same order. However, you cannot stack multiple order-level discounts together.
-
-**Allowed:**
-- Sub-total discount + Individual item discount
-- Delivery fee discount + Per eligible item discount
-
-**Not allowed:**
-- Sub-total discount + Total discount
-- Two sub-total discounts
+Genrally, you cannot stack multiple order-level discounts together. However, you can combine one order-level discount with one Individual item discount (applied only from the POS) on the same order.
 
 ## Configuration settings
 
@@ -101,11 +93,11 @@ The **Description** is for internal notes only — your team can see it but cust
 
 ### Value
 
-Choose a **Value type** of either **Fixed amount** (e.g., &#36;10 off) or **Percentage** (e.g., 20% off). Fixed amounts work well for vouchers, while percentages work better for promotions.
+Choose a **Value type** of either **Fixed amount** (e.g., \$10 off) or **Percentage** (e.g., 20% off). Fixed amounts work well for vouchers, while percentages work better for promotions.
 
 Enter the **Discount value** — the amount or percentage to discount.
 
-For percentage discounts, set a **Value cap** to limit how much customers can save. For example, "20% off up to &#36;15" prevents large orders from getting excessive discounts.
+For percentage discounts, set a **Value cap** to limit how much customers can save. For example, "20% off up to \$15" prevents large orders from getting excessive discounts.
 
 ### Dates
 
@@ -141,45 +133,34 @@ Conditions let you specify exactly who can use a discount, what needs to be in t
 
 ### Who can use it
 
-**User is registered** requires customers to log into their account before they can use the discount. This is required if you want to track usage per customer or limit redemptions per person.
-
-**User has an account** checks if the customer has an account with your loyalty program. Use this for member-exclusive discounts.
-
-**User's email domain contains** checks if the customer's email matches a specific domain. For example, use `@yourcompany.com` to create a staff discount that only employees can use.
-
-**Number of orders is less than** checks the customer's order history. Set this to 1 to create a "first order only" promotion — only customers who haven't ordered before can use it.
+- **User is registered** requires customers to log into their account before they can use the discount. This is required if you want to track usage per customer or limit redemptions per person.
+- **User has an account** checks if the customer has an account with your loyalty program. Use this for member-exclusive discounts.
+- **User's email domain contains** checks if the customer's email matches a specific domain. For example, use `@yourcompany.com` to create a staff discount that only employees can use.
+- **Number of orders is less than** checks the customer's order history. Set this to 1 to create a "first order only" promotion — only customers who haven't ordered before can use it.
 
 ### What's in the cart
 
-**Cart items include either one of** requires at least one of the specified items to be in the cart. This is required for Per eligible and Lowest eligible item discounts.
-
-**Cart items include all of** requires all specified items to be in the cart. Use this for bundle deals like "Buy burger AND fries, get free drink".
-
-**Cart items exclude all of** blocks the discount if any of the specified items are in the cart. Use this to exclude alcohol from a general discount.
-
-**Cart total minimum spend** requires the order to meet a minimum value. Use this for promotions like "&#36;5 off when you spend &#36;30".
+- **Cart items include either one of** requires at least one of the specified items to be in the cart. This is required for Per eligible and Lowest eligible item discounts.
+- **Cart items include all of** requires all specified items to be in the cart. Use this for bundle deals like "Buy burger AND fries, get free drink".
+- **Cart items exclude all of** blocks the discount if any of the specified items are in the cart. Use this to exclude alcohol from a general discount.
+- **Cart total minimum spend** requires the order to meet a minimum value. Use this for promotions like "\$5 off when you spend \$30".
 
 ### Where it works
 
-**Website is** limits the discount to specific websites. Use this if you run multiple brands and want different promotions for each.
-
-**Outlet is** limits the discount to specific locations. Use this for grand opening promotions at a new outlet.
-
-**Fulfillment type is** limits the discount to specific order types (dine-in, takeaway, delivery). Use this for promotions like "Free delivery" that should only work for delivery orders.
+- **Website is** limits the discount to specific websites. Use this if you run multiple brands and want different promotions for each.
+- **Outlet is** limits the discount to specific locations. Use this for grand opening promotions at a new outlet.
+- **Fulfillment type is** limits the discount to specific order types (dine-in, takeaway, delivery). Use this for promotions like "Free delivery" that should only work for delivery orders.
 
 ### When it's valid
 
-**Serving date is between** makes the discount valid only during specific dates. Use this for holiday promotions like "Valid Dec 1-25".
-
-**Serving day of the week is** makes the discount valid only on specific days. Use this for promotions like "Monday Blues 20% Off".
-
-**Serving time is between** makes the discount valid only during specific hours. Use this for happy hour promotions like "5-8pm only".
-
-**Serving date (calendar month)** matches the customer's birth month. Use this for birthday rewards — the discount only works during the month of the customer's birthday.
+- **Serving date is between** makes the discount valid only during specific dates. Use this for holiday promotions like "Valid Dec 1-25".
+- **Serving day of the week is** makes the discount valid only on specific days. Use this for promotions like "Monday Blues 20% Off".
+- **Serving time is between** makes the discount valid only during specific hours. Use this for happy hour promotions like "5-8pm only".
+- **Serving date (calendar month)** matches the customer's birth month. Use this for birthday rewards — the discount only works during the month of the customer's birthday.
 
 ### Using tags
 
-**User or product tags include** is the most flexible way to target discounts. Instead of selecting items one by one, tag your products in Menu Builder (e.g., "happy-hour", "alcoholic", "desserts"). Then use this condition to target all tagged items with a single discount.
+- **User or product tags include** is the most flexible way to target discounts. Instead of selecting items one by one, tag your products in Menu Builder (e.g., "happy-hour", "alcoholic", "desserts"). Then use this condition to target all tagged items with a single discount.
 
 This makes maintenance easier — when you add new drinks to happy hour, just add the tag instead of updating every discount.
 
@@ -195,7 +176,7 @@ Promo codes don't work on third-party platforms like GrabFood, Deliveroo, or oth
 
 To let staff apply discounts without entering a code:
 
-1. Go to **Menu Builder > POS Layout**
+1. Go to **Menu Builder \> POS Layout**
 2. Add a new tile and select **Discount**
 3. Choose your discount
 4. Save the layout
@@ -204,19 +185,15 @@ Learn more: [Adding tiles to your POS](/configuring-atlas/pos-layout#adding-tile
 
 ## Best practices
 
-**Test before launching** by placing a small test order to verify the discount works as expected.
-
-**Use clear names** so staff instantly understand what "Weekend 20% Off" means without checking the details.
-
-**Set end dates** to avoid forgotten discounts running indefinitely.
-
-**Cap percentage discounts** to protect your margins on high-value orders.
-
-**Pair usage limits with login requirements** — "Max 1 per customer" only works if customers log in, otherwise Atlas can't track who's using the discount.
+- **Test before launching** by placing a small test order to verify the discount works as expected.
+- **Use clear names** so staff instantly understand what "Weekend 20% Off" means without checking the details.
+- **Set end dates** to avoid forgotten discounts running indefinitely.
+- **Cap percentage discounts** to protect your margins on high-value orders.
+- **Pair usage limits with login requirements** — "Max 1 per customer" only works if customers log in, otherwise Atlas can't track who's using the discount.
 
 ## Common use cases
 
-For step-by-step setup instructions for specific promotions, see **[Discount use cases](/merchant-portal/discount-use-cases)**:
+For step-by-step setup instructions for specific promotions, see [**Discount use cases**](/merchant-portal/discount-use-cases):
 
 - Free delivery for registered customers
 - 1-for-1 promotions
