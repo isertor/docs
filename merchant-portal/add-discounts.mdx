@@ -1,6 +1,6 @@
 ---
-title: "How to create discounts"
-description: "This guide explains how to create and configure different types of discounts in Atlas, including setup steps and use cases for each."
+title: "Discounts"
+description: "Create and manage discounts in Atlas to run promotions, reward loyal customers, and drive sales across all your ordering channels."
 ---
 
 <Info>
@@ -10,44 +10,284 @@ description: "This guide explains how to create and configure different types of
   - Atlas POS, Scan to order, Kiosk, Online and Aggregator users.
 </Info>
 
-## Before you begin
+## Overview
 
-Before creating a discount,  understand the different types of discounts available in Atlas:
+Discounts let you reduce the price of an order or specific items. You can use discounts to run promotions ("20% off this weekend"), reward customers ("free delivery for members"), or handle service recovery ("complimentary dessert").
 
-| Type of discount                        | Description                                                                                                                                       | Use cases                                                                |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| Sub-total discount                      | Applies to amount before delivery fees, surcharges, and taxes                                                                                     | Useful for general promotions on order subtotal                          |
-| **Total discount**                      | Applies to amount after delivery fees and surcharges, but not tax                                                                                 | Useful for overall order promotions that should discount surcharges      |
-| **Cash voucher**                        | Applies to total payable amount including tax                                                                                                     | Best for fixed amount vouchers that should discount total payable amount |
-| **Delivery fee discount**               | Applies only to the delivery fee                                                                                                                  | Great for delivery promotions                                            |
-| **Individual item discount**            | Manually applied by staff on the POS to specific items                                                                                            | Perfect for on-the-spot discounts or damaged items                       |
-| **Per eligible item discount**          | Automatically applies to all eligible items in cart\\  \*Must pair with condition type 'Cart items include either one of'                         | Perfect for item-specific promotions                                     |
-| **Lowest eligible item discount**       | Automatically applies to one eligible item of the lowest value   \*Must pair with condition type 'Cart items include either one of'               | Ideal for "cheapest item free" promotions                                |
-| **Discount last Y items every N items** | Automatically applies discount based on number of items in cart   \*Must pair with condition type 'User or product tags include (case-sensitive)' | Great for "Buy N get Y free" promotions.                                 |
+Once you create a discount, customers can apply it using a promo code at checkout, or your staff can apply it directly from the POS.
 
-## Creating a discount
+---
 
-Follow these steps to create a new discount on Atlas:
+## Quick Start
 
 <Steps>
-  <Step title='Open the side bar menu, and tap on "Marketing Tools" > "Discounts".'>
+  <Step title='Go to Marketing Tools > Discounts'>
+    Open the sidebar menu and navigate to **Marketing Tools > Discounts**.
     ![Discount 1 Web](/images/discount-1.webp)
   </Step>
-  <Step title='On the top-right corner, tap "Add Discount".'>
+  <Step title='Click "Add Discount"'>
+    In the top-right corner, click **Add Discount**.
     ![Discount 2 Web](/images/discount-2.webp)
   </Step>
-  <Step title="In the next modal, choose the discount type on the left section.">
+  <Step title="Choose a discount type">
+    Select the type from the left panel. See [Discount Types](#discount-types) below for guidance.
     ![Discount 3 Web](/images/discount-3.webp)
   </Step>
-  <Step title="Each discount type chosen will have different criteria on the right section. Fill in accordingly.">
+  <Step title="Configure settings">
+    Fill in the name, value, and dates on the right panel.
     ![Discount 4 Web](/images/discount-4.webp)
   </Step>
-  <Step title="If you wish to add discount with conditions, scroll down below to find “Discount Conditions” and fill in the required details.">
+  <Step title="Add conditions (optional)">
+    Scroll to **Discount Conditions** to control who can use this discount and when.
     ![Discount 5 Web](/images/discount-5.webp)
   </Step>
-  <Step title="Once you are done, tap “Save” on the top right corner.">
+  <Step title='Click "Save"'>
+    Your discount is now active and ready to use.
     ![Discount 6 Web](/images/discount-6.webp)
   </Step>
 </Steps>
 
-Once your discounts are set in your account, you may [**add it to your POS**](https://help.atlas.kitchen/configuring-atlas/pos-layout#adding-tiles-to-your-pos)
+<Tip>
+  To let staff apply this discount from the POS, [add it as a tile to your POS layout](/configuring-atlas/pos-layout#adding-tiles-to-your-pos).
+</Tip>
+
+---
+
+## Discount Types
+
+Atlas offers several discount types. Choose based on what you want to discount and how you want to apply it.
+
+### Order-Level Discounts
+
+These discounts reduce the total price of an order.
+
+| Type | What it does | Example |
+| --- | --- | --- |
+| **Sub-total discount** | Reduces the order amount before delivery fees, surcharges, and taxes are added | "$5 off orders of $30 or more" or "15% off your order" |
+| **Total discount** | Reduces the order amount after fees and surcharges, but before tax | "10% off your entire bill including delivery fee" |
+| **Cash voucher** | Reduces the final payable amount, including taxes | "$20 gift voucher" that covers exactly $20 of the final bill |
+| **Delivery fee discount** | Reduces or removes the delivery fee | "Free delivery for orders over $25" |
+
+<Info>
+  **Which order discount should I use?**
+
+  - Use **Sub-total** for most promotions — it's the standard choice.
+  - Use **Total** if you want the discount to also apply to surcharges.
+  - Use **Cash voucher** for gift cards or vouchers where the discount should cover taxes too.
+  - Use **Delivery fee** specifically for delivery promotions.
+</Info>
+
+### Item-Level Discounts
+
+These discounts reduce the price of specific items rather than the whole order.
+
+| Type | What it does | Example |
+| --- | --- | --- |
+| **Individual item discount** | Staff manually selects which item to discount at the POS | A manager comps a guest's appetizer as a goodwill gesture |
+| **Per eligible item discount** | Automatically discounts all items that match your criteria | "20% off all desserts" — every dessert in the cart is discounted |
+| **Lowest eligible item discount** | Automatically discounts the cheapest item that matches your criteria | "Cheapest pizza free when you order 3 or more" |
+| **Discount last Y items every N items** | Discounts Y items for every N items purchased | "Buy 1 beer, get 1 free" (1-for-1 promotion) |
+
+<Warning>
+  **Item discounts require conditions:**
+  - **Per eligible** and **Lowest eligible** must be paired with "Cart items include either one of"
+  - **Last Y every N** must be paired with "User or product tags include"
+
+  See [Discount Conditions](#discount-conditions) for setup details.
+</Warning>
+
+### Stacking Rules
+
+You can combine one order-level discount with one item-level discount on the same order. However, you cannot stack multiple order-level discounts together.
+
+**Allowed:**
+- Sub-total discount + Individual item discount ✓
+- Delivery fee discount + Per eligible item discount ✓
+
+**Not allowed:**
+- Sub-total discount + Total discount ✗
+- Two sub-total discounts ✗
+
+---
+
+## Configuration Settings
+
+When creating a discount, you'll configure these settings:
+
+### Name and Description
+
+| Field | What it does | Tips |
+| --- | --- | --- |
+| **Name** | Shown to customers on receipts and at checkout | Use clear, promotional names like "Weekend Special 20% Off" |
+| **Description** | Internal notes for your team | Note the campaign details, e.g., "Summer 2024 marketing campaign" |
+
+### Value
+
+| Field | What it does | Tips |
+| --- | --- | --- |
+| **Value type** | Choose **Fixed amount** (e.g., $10 off) or **Percentage** (e.g., 20% off) | Use fixed for vouchers, percentage for promotions |
+| **Discount value** | The amount or percentage to discount | — |
+| **Value cap** | For percentages: maximum discount amount | Set a cap to protect margins — e.g., "20% off up to $15" prevents large orders from getting excessive discounts |
+
+### Dates
+
+| Field | What it does | Tips |
+| --- | --- | --- |
+| **Redemption start date** | When customers can start using this discount | Schedule future promotions in advance |
+| **Redemption end date** | When the discount expires | Always set an end date to avoid forgotten active discounts |
+
+### Promo Code
+
+| Field | What it does | Tips |
+| --- | --- | --- |
+| **Promo code** | The code customers enter to apply the discount | Use memorable codes like "WELCOME10" or "FREEDELIVERY" |
+
+<Tip>
+  **No promo code?** Leave this blank to create a POS-only discount. Staff can apply it from a discount tile without needing a code. This is useful for manager discretion discounts or service recovery.
+</Tip>
+
+### Usage Limits
+
+| Field | What it does | Tips |
+| --- | --- | --- |
+| **Maximum usage in total** | Total times this discount can be redeemed across all customers | Set a limit for exclusive promotions — e.g., "First 100 customers only" |
+| **Maximum usage per diner** | Times each customer can use this discount | Set to 1 for "one per customer" offers |
+
+<Warning>
+  **Important:** To track usage per customer, you must identify who they are. Add the condition **"User is registered"** so customers must log in. Without this, the system cannot track individual usage.
+</Warning>
+
+### Advanced Settings
+
+| Field | What it does | When to use |
+| --- | --- | --- |
+| **Assign payment type for full discounts** | Tags fully comped items (100% off) with a specific payment type | For accurate reporting on complimentary items |
+| **Discount modifiers** | Whether add-ons/modifiers are included in the discount | Turn OFF for "1-for-1 oysters" so premium toppings aren't free |
+| **Max redemptions per use** | For "Last Y every N" discounts: limits how many times it triggers per order | Prevents "buy 10 get 5 free" — set to 1 for just one free item |
+
+---
+
+## Discount Conditions
+
+Conditions let you control exactly when and to whom a discount applies. Add conditions by clicking **"+ Add condition"** at the bottom of the discount form.
+
+### Customer Conditions
+
+Control who can use the discount.
+
+| Condition | What it does | Example use |
+| --- | --- | --- |
+| **User is registered** | Customer must be logged into their account | Required for tracking usage per customer |
+| **User has an account** | Customer has an account with your loyalty program | Loyalty member exclusives |
+| **User's email domain contains** | Customer's email matches a specific domain | "@company.com" for corporate discounts |
+| **Number of orders is less than** | Customer has fewer than X previous orders | Set to 1 for "first order only" promos |
+
+### Cart Conditions
+
+Control what must be in the order.
+
+| Condition | What it does | Example use |
+| --- | --- | --- |
+| **Cart items include either one of** | At least one specified item is in the cart | Required for per-eligible and lowest-eligible discounts |
+| **Cart items include all of** | All specified items must be in the cart | "Buy burger AND fries, get free drink" |
+| **Cart items exclude all of** | Discount won't apply if these items are in cart | Exclude alcohol from a general discount |
+| **Cart total minimum spend** | Order must meet a minimum value | "$5 off when you spend $30" |
+
+### Channel Conditions
+
+Control where the discount works.
+
+| Condition | What it does | Example use |
+| --- | --- | --- |
+| **Website is** | Discount only works on specific websites | Different promos for different brands |
+| **Outlet is** | Discount only works at specific locations | Grand opening promo for new outlet |
+| **Fulfillment type is** | Discount only works for specific order types | "Free delivery" only for delivery orders |
+
+### Time Conditions
+
+Control when the discount is valid.
+
+| Condition | What it does | Example use |
+| --- | --- | --- |
+| **Serving date is between** | Valid only during specific dates | "Valid Dec 1-25" for holiday promo |
+| **Serving day of the week is** | Valid only on specific days | "Monday Blues 20% Off" |
+| **Serving time is between** | Valid only during specific hours | "Happy Hour 5-8pm" |
+| **Serving date (calendar month)** | Matches customer's birth month | Birthday rewards |
+
+### Tag Conditions
+
+The most flexible way to target discounts.
+
+| Condition | What it does | Example use |
+| --- | --- | --- |
+| **User or product tags include** | Matches custom tags on products or customers | Tag products with "happy-hour" and target them all at once |
+
+<Tip>
+  **Pro tip:** Instead of selecting items one by one, tag your products in Menu Builder (e.g., "promo-eligible", "alcoholic", "desserts"). Then use tag conditions to target entire categories with a single discount.
+</Tip>
+
+---
+
+## Where Discounts Work
+
+| Channel | How customers apply it |
+| --- | --- |
+| **Atlas Online** | Enter promo code at checkout |
+| **Kiosk** | Enter promo code on screen |
+| **Scan to Order** | Enter promo code in ordering flow |
+| **POS** | Staff tap discount tile or enter promo code |
+
+<Warning>
+  **Third-party platforms:** Promo codes don't work on GrabFood, Deliveroo, or other aggregators. Those platforms have their own promotion systems.
+</Warning>
+
+---
+
+## Adding Discounts to Your POS
+
+To let staff apply discounts without entering a code:
+
+1. Go to **Menu Builder > POS Layout**
+2. Add a new tile and select **Discount**
+3. Choose your discount
+4. Save the layout
+
+Learn more: [Adding tiles to your POS](/configuring-atlas/pos-layout#adding-tiles-to-your-pos)
+
+---
+
+## Best Practices
+
+<Check>
+  **Test before launching** — Place a small test order to verify the discount works as expected
+</Check>
+
+<Check>
+  **Use clear names** — Staff should instantly understand what "Weekend 20% Off" means
+</Check>
+
+<Check>
+  **Set end dates** — Avoid forgotten discounts running indefinitely
+</Check>
+
+<Check>
+  **Cap percentage discounts** — Protect your margins on high-value orders
+</Check>
+
+<Check>
+  **Pair usage limits with login requirements** — "Max 1 per customer" only works if customers log in
+</Check>
+
+---
+
+## Common Use Cases
+
+For step-by-step setup instructions for specific promotions, see **[Discount Use Cases](/merchant-portal/discount-use-cases)**:
+
+- Free delivery for registered customers
+- 1-for-1 promotions
+- Happy hour discounts
+- First order discounts
+- Birthday month promotions
+- Corporate/staff discounts
+- And more...
