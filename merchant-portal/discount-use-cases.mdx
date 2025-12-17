@@ -20,50 +20,52 @@ For an overview of how discounts work, see **[Discounts](/merchant-portal/add-di
 
 Get new customers through the door.
 
-### First Order Discount
+<AccordionGroup>
+  <Accordion title="First Order Discount" icon="gift" defaultOpen="true">
+    Give new customers a reason to try you out. Add a minimum spend to make sure it's worth it.
 
-Give new customers a reason to try you out. Add a minimum spend to make sure it's worth it.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Welcome - 10 Off Your First Order |
+    | **Value type** | Fixed amount |
+    | **Value** | 10 |
+    | **Promo code** | WELCOME10 |
+    | **Max usage per diner** | 1 |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Welcome - 10 Off Your First Order |
-| **Value type** | Fixed amount |
-| **Value** | 10 |
-| **Promo code** | WELCOME10 |
-| **Max usage per diner** | 1 |
+    **Conditions:**
 
-**Conditions:**
+    | Condition | Value | Why |
+    | --- | --- | --- |
+    | User is registered | Yes | Required to track order history |
+    | Number of orders is less than | 1 | Ensures it's their first order |
+    | Cart total minimum spend | 30 (optional) | Prevents abuse on small orders |
 
-| Condition | Value | Why |
-| --- | --- | --- |
-| User is registered | Yes | Required to track order history |
-| Number of orders is less than | 1 | Ensures it's their first order |
-| Cart total minimum spend | 30 (optional) | Prevents abuse on small orders |
+    <Warning>
+      Both conditions are required. Without login, Atlas can't verify if it's the customer's first order.
+    </Warning>
+  </Accordion>
 
-<Warning>
-  Both conditions are required. Without login, Atlas can't verify if it's the customer's first order.
-</Warning>
+  <Accordion title="Free Delivery for New Customers" icon="truck">
+    Delivery fees put people off. Waive them on the first order.
 
-### Free Delivery for New Customers
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Delivery fee discount |
+    | **Name** | Free Delivery - First Order |
+    | **Value type** | Percentage |
+    | **Value** | 100% |
+    | **Promo code** | FREEDELIVERY |
 
-Delivery fees put people off. Waive them on the first order.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Delivery fee discount |
-| **Name** | Free Delivery - First Order |
-| **Value type** | Percentage |
-| **Value** | 100% |
-| **Promo code** | FREEDELIVERY |
-
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| User is registered | Yes |
-| Number of orders is less than | 1 |
-| Fulfillment type is | Delivery |
+    | Condition | Value |
+    | --- | --- |
+    | User is registered | Yes |
+    | Number of orders is less than | 1 |
+    | Fulfillment type is | Delivery |
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -71,75 +73,77 @@ Delivery fees put people off. Waive them on the first order.
 
 Keep your regulars coming back.
 
-### Free Delivery for Members
+<AccordionGroup>
+  <Accordion title="Free Delivery for Members" icon="user-check" defaultOpen="true">
+    Registered customers get free delivery automatically. Good incentive for people to create accounts.
 
-Registered customers get free delivery automatically. Good incentive for people to create accounts.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Delivery fee discount |
+    | **Name** | Member Free Delivery |
+    | **Value type** | Percentage |
+    | **Value** | 100% |
+    | **Promo code** | Leave blank (auto-applies) |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Delivery fee discount |
-| **Name** | Member Free Delivery |
-| **Value type** | Percentage |
-| **Value** | 100% |
-| **Promo code** | Leave blank (auto-applies) |
+    **Conditions:**
 
-**Conditions:**
+    | Condition | Value |
+    | --- | --- |
+    | User is registered | Yes |
+    | Fulfillment type is | Delivery |
 
-| Condition | Value |
-| --- | --- |
-| User is registered | Yes |
-| Fulfillment type is | Delivery |
+    <Tip>
+      Leave the promo code blank so it applies automatically — no code needed.
+    </Tip>
+  </Accordion>
 
-<Tip>
-  Leave the promo code blank so it applies automatically — no code needed.
-</Tip>
+  <Accordion title="Birthday Month Discount" icon="cake-candles">
+    Customers like being remembered. Give them 15% off during their birthday month.
 
-### Birthday Month Discount
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Birthday Treat - 15% Off |
+    | **Value type** | Percentage |
+    | **Value** | 15% |
+    | **Value cap** | 20 |
+    | **Promo code** | BIRTHDAY |
+    | **Max usage per diner** | 1 |
 
-Customers like being remembered. Give them 15% off during their birthday month.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Birthday Treat - 15% Off |
-| **Value type** | Percentage |
-| **Value** | 15% |
-| **Value cap** | 20 |
-| **Promo code** | BIRTHDAY |
-| **Max usage per diner** | 1 |
+    | Condition | Value |
+    | --- | --- |
+    | User is registered | Yes |
+    | Serving date (calendar month) | (matches birth month) |
 
-**Conditions:**
+    <Warning>
+      Customers must have their birthday saved in their account profile.
+    </Warning>
+  </Accordion>
 
-| Condition | Value |
-| --- | --- |
-| User is registered | Yes |
-| Serving date (calendar month) | (matches birth month) |
+  <Accordion title="Minimum Spend Discount" icon="receipt">
+    "Spend 50, get 10 off" — customers often add extra items to hit the threshold.
 
-<Warning>
-  Customers must have their birthday saved in their account profile.
-</Warning>
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Spend 50 Get 10 Off |
+    | **Value type** | Fixed amount |
+    | **Value** | 10 |
+    | **Promo code** | SPEND50 |
 
-### Minimum Spend Discount
+    **Conditions:**
 
-"Spend 50, get 10 off" — customers often add extra items to hit the threshold.
+    | Condition | Value |
+    | --- | --- |
+    | Cart total minimum spend | 50 |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Spend 50 Get 10 Off |
-| **Value type** | Fixed amount |
-| **Value** | 10 |
-| **Promo code** | SPEND50 |
-
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| Cart total minimum spend | 50 |
-
-<Tip>
-  You can set up tiered discounts: Spend 50 get 10, Spend 80 get 20, Spend 120 get 35. Use different promo codes for each.
-</Tip>
+    <Tip>
+      You can set up tiered discounts: Spend 50 get 10, Spend 80 get 20, Spend 120 get 35. Use different promo codes for each.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -147,84 +151,86 @@ Customers like being remembered. Give them 15% off during their birthday month.
 
 Fill slower periods or create buzz around specific times.
 
-### Happy Hour
+<AccordionGroup>
+  <Accordion title="Happy Hour" icon="clock" defaultOpen="true">
+    Automatically discount drinks between 5-8pm on weekdays. No manual work needed.
 
-Automatically discount drinks between 5-8pm on weekdays. No manual work needed.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Per eligible item discount |
+    | **Name** | Happy Hour 20% Off Drinks |
+    | **Value type** | Percentage |
+    | **Value** | 20% |
+    | **Value cap** | 10 per item (optional) |
+    | **Promo code** | Leave blank (auto-applies) |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Per eligible item discount |
-| **Name** | Happy Hour 20% Off Drinks |
-| **Value type** | Percentage |
-| **Value** | 20% |
-| **Value cap** | 10 per item (optional) |
-| **Promo code** | Leave blank (auto-applies) |
+    **Conditions:**
 
-**Conditions:**
+    | Condition | Value |
+    | --- | --- |
+    | Cart items include either one of | (select all drink items) |
+    | Serving time is between | 17:00 – 20:00 |
+    | Serving day of the week is | Mon, Tue, Wed, Thu, Fri |
 
-| Condition | Value |
-| --- | --- |
-| Cart items include either one of | (select all drink items) |
-| Serving time is between | 17:00 – 20:00 |
-| Serving day of the week is | Mon, Tue, Wed, Thu, Fri |
+    <Tip>
+      Instead of selecting drinks one by one, tag them with "happy-hour" in Menu Builder. Then use **"User or product tags include"** with the tag "happy-hour". When you add new drinks, just add the tag.
+    </Tip>
+  </Accordion>
 
-<Tip>
-  Instead of selecting drinks one by one, tag them with "happy-hour" in Menu Builder. Then use **"User or product tags include"** with the tag "happy-hour". When you add new drinks, just add the tag.
-</Tip>
+  <Accordion title="1-for-1 Promotion" icon="beer-mug-empty">
+    Buy one, get one free. Common for beers and appetizers.
 
-### 1-for-1 Promotion
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Discount last Y items every N items |
+    | **Name** | 1-for-1 Beer |
+    | **Last Y items** | 1 |
+    | **Every N items** | 2 |
+    | **Value type** | Percentage |
+    | **Value** | 100% |
+    | **Discount modifiers** | OFF |
+    | **Max redemptions per use** | 2 (optional — limits free items per order) |
 
-Buy one, get one free. Common for beers and appetizers.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Discount last Y items every N items |
-| **Name** | 1-for-1 Beer |
-| **Last Y items** | 1 |
-| **Every N items** | 2 |
-| **Value type** | Percentage |
-| **Value** | 100% |
-| **Discount modifiers** | OFF |
-| **Max redemptions per use** | 2 (optional — limits free items per order) |
+    | Condition | Value |
+    | --- | --- |
+    | User or product tags include | 1for1-beer |
+    | Serving time is between | 17:00 – 20:00 (optional) |
 
-**Conditions:**
+    **How it works:**
+    - 2 beers → cheapest one free
+    - 4 beers → 2 cheapest free
+    - 3 beers → 1 free (odd one is full price)
 
-| Condition | Value |
-| --- | --- |
-| User or product tags include | 1for1-beer |
-| Serving time is between | 17:00 – 20:00 (optional) |
+    <Warning>
+      Tag eligible products with "1for1-beer" in Menu Builder first. The discount only applies to tagged items.
+    </Warning>
 
-**How it works:**
-- 2 beers → cheapest one free
-- 4 beers → 2 cheapest free
-- 3 beers → 1 free (odd one is full price)
+    <Tip>
+      Always discounts the **cheapest** item. A 12 dollar Tiger and a 20 dollar craft beer? The Tiger is free.
+    </Tip>
+  </Accordion>
 
-<Warning>
-  Tag eligible products with "1for1-beer" in Menu Builder first. The discount only applies to tagged items.
-</Warning>
+  <Accordion title="Weekend Special" icon="calendar-week">
+    Automatic 15% discount on Saturday and Sunday.
 
-<Tip>
-  Always discounts the **cheapest** item. A 12 dollar Tiger and a 20 dollar craft beer? The Tiger is free.
-</Tip>
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Weekend Special 15% Off |
+    | **Value type** | Percentage |
+    | **Value** | 15% |
+    | **Value cap** | 20 |
+    | **Promo code** | WEEKEND15 |
 
-### Weekend Special
+    **Conditions:**
 
-Automatic 15% discount on Saturday and Sunday.
-
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Weekend Special 15% Off |
-| **Value type** | Percentage |
-| **Value** | 15% |
-| **Value cap** | 20 |
-| **Promo code** | WEEKEND15 |
-
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| Serving day of the week is | Saturday, Sunday |
+    | Condition | Value |
+    | --- | --- |
+    | Serving day of the week is | Saturday, Sunday |
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -232,43 +238,45 @@ Automatic 15% discount on Saturday and Sunday.
 
 Target specific channels or outlets.
 
-### Dine-in Only Promotion
+<AccordionGroup>
+  <Accordion title="Dine-in Only Promotion" icon="utensils" defaultOpen="true">
+    10% off for dine-in customers. Encourage people to eat in instead of ordering delivery.
 
-10% off for dine-in customers. Encourage people to eat in instead of ordering delivery.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Dine-in Special 10% Off |
+    | **Value type** | Percentage |
+    | **Value** | 10% |
+    | **Promo code** | DINEIN10 |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Dine-in Special 10% Off |
-| **Value type** | Percentage |
-| **Value** | 10% |
-| **Promo code** | DINEIN10 |
+    **Conditions:**
 
-**Conditions:**
+    | Condition | Value |
+    | --- | --- |
+    | Fulfillment type is | Dine-in |
+  </Accordion>
 
-| Condition | Value |
-| --- | --- |
-| Fulfillment type is | Dine-in |
+  <Accordion title="Outlet Grand Opening" icon="store">
+    30% off at a new location. Set an end date and cap the discount.
 
-### Outlet Grand Opening
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Grand Opening 30% Off |
+    | **Value type** | Percentage |
+    | **Value** | 30% |
+    | **Value cap** | 30 |
+    | **Promo code** | GRANDOPEN |
+    | **Redemption end date** | (end of promotion) |
 
-30% off at a new location. Set an end date and cap the discount.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Grand Opening 30% Off |
-| **Value type** | Percentage |
-| **Value** | 30% |
-| **Value cap** | 30 |
-| **Promo code** | GRANDOPEN |
-| **Redemption end date** | (end of promotion) |
-
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| Outlet is | (select new outlet) |
+    | Condition | Value |
+    | --- | --- |
+    | Outlet is | (select new outlet) |
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -276,47 +284,49 @@ Target specific channels or outlets.
 
 Discounts for employees and partners.
 
-### Staff Discount
+<AccordionGroup>
+  <Accordion title="Staff Discount" icon="id-badge" defaultOpen="true">
+    Staff log in with their work email, discount applies automatically. No codes to manage.
 
-Staff log in with their work email, discount applies automatically. No codes to manage.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Staff Discount |
+    | **Value type** | Percentage |
+    | **Value** | 25% |
+    | **Promo code** | Leave blank (auto-applies) |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Staff Discount |
-| **Value type** | Percentage |
-| **Value** | 25% |
-| **Promo code** | Leave blank (auto-applies) |
+    **Conditions:**
 
-**Conditions:**
+    | Condition | Value |
+    | --- | --- |
+    | User is registered | Yes |
+    | User's email domain contains | @yourcompany.com |
 
-| Condition | Value |
-| --- | --- |
-| User is registered | Yes |
-| User's email domain contains | @yourcompany.com |
+    <Tip>
+      Add multiple email domain conditions if you have staff from different companies or franchises.
+    </Tip>
+  </Accordion>
 
-<Tip>
-  Add multiple email domain conditions if you have staff from different companies or franchises.
-</Tip>
+  <Accordion title="Corporate Partner Discount" icon="handshake">
+    Give partners a promo code to share with their team.
 
-### Corporate Partner Discount
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | Partner Discount |
+    | **Value type** | Percentage |
+    | **Value** | 15% |
+    | **Promo code** | PARTNER15 |
 
-Give partners a promo code to share with their team.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | Partner Discount |
-| **Value type** | Percentage |
-| **Value** | 15% |
-| **Promo code** | PARTNER15 |
-
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| User is registered | Yes |
-| User's email domain contains | @partnercompany.com |
+    | Condition | Value |
+    | --- | --- |
+    | User is registered | Yes |
+    | User's email domain contains | @partnercompany.com |
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -324,49 +334,51 @@ Give partners a promo code to share with their team.
 
 Day-to-day discounts for your team.
 
-### Complimentary Item (Service Recovery)
+<AccordionGroup>
+  <Accordion title="Complimentary Item (Service Recovery)" icon="hand-holding-heart" defaultOpen="true">
+    Let staff comp items when something goes wrong. No manager code needed.
 
-Let staff comp items when something goes wrong. No manager code needed.
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Individual item discount |
+    | **Name** | Complimentary Item |
+    | **Value type** | Percentage |
+    | **Value** | 100% |
+    | **Promo code** | Leave blank |
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Individual item discount |
-| **Name** | Complimentary Item |
-| **Value type** | Percentage |
-| **Value** | 100% |
-| **Promo code** | Leave blank |
+    **How staff use it:**
+    1. Add the item to the order
+    2. Tap the "Complimentary Item" discount tile on POS
+    3. Select which item to comp
+    4. Item shows as free on the receipt
 
-**How staff use it:**
-1. Add the item to the order
-2. Tap the "Complimentary Item" discount tile on POS
-3. Select which item to comp
-4. Item shows as free on the receipt
+    <Warning>
+      You must [add this discount as a tile to your POS layout](/configuring-atlas/pos-layout#adding-tiles-to-your-pos) for staff to access it.
+    </Warning>
+  </Accordion>
 
-<Warning>
-  You must [add this discount as a tile to your POS layout](/configuring-atlas/pos-layout#adding-tiles-to-your-pos) for staff to access it.
-</Warning>
+  <Accordion title="Exclude Alcohol from Promotion" icon="wine-bottle">
+    20% off everything except alcohol items.
 
-### Exclude Alcohol from Promotion
+    | Setting | Value |
+    | --- | --- |
+    | **Discount type** | Sub-total discount |
+    | **Name** | 20% Off Food |
+    | **Value type** | Percentage |
+    | **Value** | 20% |
+    | **Promo code** | SAVE20 |
 
-20% off everything except alcohol items.
+    **Conditions:**
 
-| Setting | Value |
-| --- | --- |
-| **Discount type** | Sub-total discount |
-| **Name** | 20% Off Food |
-| **Value type** | Percentage |
-| **Value** | 20% |
-| **Promo code** | SAVE20 |
+    | Condition | Value |
+    | --- | --- |
+    | Cart items exclude all of | (select all alcohol items) |
 
-**Conditions:**
-
-| Condition | Value |
-| --- | --- |
-| Cart items exclude all of | (select all alcohol items) |
-
-<Info>
-  The discount applies to the whole order except alcohol. 50 dollars of food and 20 dollars of beer? Only the food is discounted.
-</Info>
+    <Info>
+      The discount applies to the whole order except alcohol. 50 dollars of food and 20 dollars of beer? Only the food is discounted.
+    </Info>
+  </Accordion>
+</AccordionGroup>
 
 ---
 
