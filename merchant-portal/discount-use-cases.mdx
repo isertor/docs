@@ -26,7 +26,7 @@ Get new customers through the door.
 
     **Setup:** Create a **Sub-total discount** named "Welcome - 10 Off Your First Order" with a **fixed amount** of \$10. Set the promo code to `WELCOME10` and limit usage to 1 per diner.
 
-    **Make it work:** Add these conditions so only first-time customers can use it:
+    **Add these conditions** so only first-time customers can use it:
 
     - **User is registered** = Yes (required to track order history)
     - **Number of orders is less than** = 1 (ensures it's their first order)
@@ -41,7 +41,7 @@ Get new customers through the door.
 
     **Setup:** Create a **Delivery fee discount** named "Free Delivery - First Order" with a **percentage** of 100%. Set the promo code to `FREEDELIVERY`.
 
-    **Make it work:** Add these conditions:
+    **Add these conditions:**
 
     - **User is registered** = Yes
     - **Number of orders is less than** = 1
@@ -57,11 +57,9 @@ Keep your regulars coming back.
   <Accordion title="Free delivery for members" defaultOpen="true" icon="user-check">
     Reward logged-in customers with free delivery on every order. This gives people a good reason to create accounts.
 
-    ![Discount settings fields](/images/discount-4.webp)
-
     **Setup:** Create a **Delivery fee discount** named "Member Free Delivery" with a **percentage** of 100%. Set the promo code to `MEMBER` or leave it blank for POS-only.
 
-    **Make it work:** Add these conditions:
+    **Add these conditions:**
 
     - **User is registered** = Yes
     - **Fulfillment type is** = Delivery
@@ -73,7 +71,7 @@ Keep your regulars coming back.
 
     **Setup:** Create a **Sub-total discount** named "Birthday Treat - 15% Off" with a **percentage** of 15% and a **value cap** of \$20. Set the promo code to `BIRTHDAY` and limit usage to 1 per diner.
 
-    **Make it work:** Add these conditions:
+    **Add these conditions:**
 
     - **User is registered** = Yes
     - **Serving date (calendar month)** = matches birth month
@@ -85,7 +83,7 @@ Keep your regulars coming back.
 
     **Setup:** Create a **Sub-total discount** named "Spend 50 Get 10 Off" with a **fixed amount** of \$10. Set the promo code to `SPEND50`.
 
-    **Make it work:** Add this condition:
+    **Add this condition:**
 
     - **Cart total minimum spend** = \$50
 
@@ -103,17 +101,17 @@ Fill slower periods or create buzz around specific times.
 
     **Setup:** Create a **Per eligible item discount** named "Happy Hour 20% Off Drinks" with a **percentage** of 20% and an optional **value cap** of \$10 per item. Set the promo code to `HAPPYHOUR` or leave it blank for POS-only.
 
-    **Make it work:** Add these conditions:
+    **Add these conditions:**
 
     - **Cart items include either one of** = (select all drink items)
     - **Serving time is between** = 17:00 – 20:00
     - **Serving day of the week is** = Mon, Tue, Wed, Thu, Fri
 
-    If you have many drinks and don't want to select them one by one, tag them with "happy-hour" in Menu Builder and use **"User or product tags include"** instead.
+    ---
 
     If you have too many drinks and don't want to add them 1 by 1, you could also do a setup this way:
 
-    **Setup:** Create a **Discount last Y items every N items** named "Happy Hour 20% Off Drinks". Set **Last Y items **= 1 and**Every N items ** = 1. Use a percentage of 20%. Set the promo code to `HAPPYHOUR` or leave it blank for POS-only.
+    **Setup:** Create a **Discount last Y items every N items** named "Happy Hour 20% Off Drinks". Set \*\*Last Y items **= 1 and**Every N items \*\* = 1. Use a percentage of 20%. Set the promo code to `HAPPYHOUR` or leave it blank for POS-only.
 
     Add these conditions:
 
@@ -121,14 +119,14 @@ Fill slower periods or create buzz around specific times.
     - **Serving time is between** = 17:00 – 20:00
     - **Serving day of the week is** = Mon, Tue, Wed, Thu, Fri
 
-    Instead of selecting drinks one by one, tag them with "happy-hour" in Menu Builder. Then use "User or product tags include" with the tag "happy-hour".
+    Instead of selecting drinks one by one, tag them with "happy-hour" in the Menu Builder. Then use "User or product tags include" with the tag "happy-hour".
   </Accordion>
   <Accordion title="1-for-1 promotion" icon="beer-mug-empty">
     Buy one, get one free. Common for beers and appetizers during happy hour.
 
     **Setup:** Create a **Discount last Y items every N items** discount named "1-for-1 Beer". Set **Last Y items** = 1 and **Every N items** = 2. Use a **percentage** of 100% and turn **Discount modifiers** OFF. Optionally set **Max redemptions per use** = 2 to limit free items per order.
 
-    **Make it work:** Add these conditions:
+    **Add these conditions:**
 
     - **User or product tags include** = 1for1-beer
     - **Serving time is between** = 17:00 – 20:00 (optional)
@@ -141,10 +139,10 @@ Fill slower periods or create buzz around specific times.
     - 4 beers → 2 cheapest free
     - 3 beers → 1 free (odd one is full price)
 
-    The system always discounts the cheapest item. A \$12 Tiger and a \$20 craft beer? The Tiger is free.
+    The system always discounts the cheapest item. A \$12 lager and a \$20 craft beer? The lager is free.
   </Accordion>
   <Accordion title="Weekend special" icon="calendar-week">
-    Automatic 15% discount on Saturday and Sunday.
+    15% discount on Saturday and Sunday.
 
     **Setup:** Create a **Sub-total discount** named "Weekend Special 15% Off" with a **percentage** of 15% and a **value cap** of \$20. Set the promo code to `WEEKEND15`.
 
@@ -159,14 +157,14 @@ Fill slower periods or create buzz around specific times.
 Target specific channels or outlets.
 
 <AccordionGroup>
-  <Accordion title="Dine-in only promotion" defaultOpen="true" icon="utensils">
-    10% off for dine-in customers. Encourage people to eat in instead of ordering delivery.
+  <Accordion title="Pickup only promotion" defaultOpen icon="utensils">
+    10% off for cusotmers self-collecting their online orders. Encourage people to pick up directly the food in seasons where is difficult to find a driver.
 
-    **Setup:** Create a **Sub-total discount** named "Dine-in Special 10% Off" with a **percentage** of 10%. Set the promo code to `DINEIN10`.
+    **Setup:** Create a **Sub-total discount** named "Dine-in Special 10% Off" with a **percentage** of 10%. Set the promo code to `PICKUP10`.
 
     **Make it work:** Add this condition:
 
-    - **Fulfillment type is** = Dine-in
+    - **Fulfillment type is** = Pickup
   </Accordion>
   <Accordion title="Outlet grand opening" icon="store">
     30% off at a new location. Set an end date and cap the discount to protect margins.
@@ -185,7 +183,7 @@ Discounts for employees and partners.
 
 <AccordionGroup>
   <Accordion title="Staff discount" defaultOpen="true" icon="id-badge">
-    Give staff a discount when they order. They log in with their work email and enter the promo code.
+    Give staff a discount when they self-order at any of your channels. They log in with their work email and enter the promo code.
 
     **Setup:** Create a **Sub-total discount** named "Staff Discount" with a **percentage** of 25%. Set the promo code to `STAFF25` or leave it blank for POS-only.
 
@@ -195,6 +193,8 @@ Discounts for employees and partners.
     - **User's email domain contains** = @yourcompany.com
 
     You can add multiple email domain conditions if you have staff from different companies or franchises.
+
+    Take note most restaurants that set this up for the POS, don't actually set any conditions - and let the staff control who can redeem it.
   </Accordion>
   <Accordion title="Corporate partner discount" icon="handshake">
     Give partners a promo code to share with their team.
@@ -220,10 +220,10 @@ Day-to-day discounts for your team.
 
     **How staff use it:**
 
-    1. Add the item to the order
-    2. Tap the "Complimentary Item" discount tile on POS
-    3. Select which item to comp
-    4. Item shows as free on the receipt
+    - Add the item to the order
+    - Tap the "Complimentary Item" discount tile on POS
+    - Select which item to comp
+    - Item shows as free on the receipt
 
     You'll need to [add this discount as a tile to your POS layout](/configuring-atlas/pos-layout#adding-tiles-to-your-pos) for staff to access it.
   </Accordion>
@@ -237,6 +237,18 @@ Day-to-day discounts for your team.
     - **Cart items exclude all of** = (select all alcohol items)
 
     The discount applies to the whole order except alcohol. \$50 of food and \$20 of beer? Only the food is discounted.
+
+    ---
+
+    If you have too many alcoholic drinks and don't want to add them 1 by 1, you could also do a setup this way:
+
+    **Setup:** Create a **Discount last Y items every N items** named "20% Off Food". Set **Last Y items** = 1 and**Every N items**  = 1. Use a percentage of 20%. Set the promo code to `FOOD20 `or leave it blank for POS-only.
+
+    Add these conditions:
+
+    - **User or product tags include** = food20
+
+    Instead of selecting alcoholic drinks one by one, tag the applicable items instead (food in this case) with "food20" in the Menu Builder. Then use "User or product tags include" with the tag "food20".
   </Accordion>
 </AccordionGroup>
 
