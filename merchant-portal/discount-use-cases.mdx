@@ -20,16 +20,16 @@ Get new customers through the door.
 
 <AccordionGroup>
   <Accordion title="First order discount" icon="gift" defaultOpen="true">
-    Give new customers a reason to try you out. Offer $10 off their first order with a minimum spend to make sure it's worth it.
+    Give new customers a reason to try you out. Offer &#36;10 off their first order with a minimum spend to make sure it's worth it.
 
     <img src="/images/discount-3.webp" alt="Select discount type" />
 
-    **Setup:** Create a **Sub-total discount** named "Welcome - 10 Off Your First Order" with a **fixed amount** of $10. Set the promo code to `WELCOME10` and limit usage to 1 per diner.
+    **Setup:** Create a **Sub-total discount** named "Welcome - 10 Off Your First Order" with a **fixed amount** of &#36;10. Set the promo code to `WELCOME10` and limit usage to 1 per diner.
 
     **Make it work:** Add these conditions so only first-time customers can use it:
     - **User is registered** = Yes (required to track order history)
     - **Number of orders is less than** = 1 (ensures it's their first order)
-    - **Cart total minimum spend** = $30 (optional, prevents abuse on small orders)
+    - **Cart total minimum spend** = &#36;30 (optional, prevents abuse on small orders)
 
     <img src="/images/discount-5.webp" alt="Setting discount conditions" />
 
@@ -58,19 +58,19 @@ Keep your regulars coming back.
 
     <img src="/images/discount-4.webp" alt="Discount settings fields" />
 
-    **Setup:** Create a **Delivery fee discount** named "Member Free Delivery" with a **percentage** of 100%. Leave the promo code blank so it applies automatically.
+    **Setup:** Create a **Delivery fee discount** named "Member Free Delivery" with a **percentage** of 100%. Set the promo code to `MEMBER` or leave it blank for POS-only.
 
     **Make it work:** Add these conditions:
     - **User is registered** = Yes
     - **Fulfillment type is** = Delivery
 
-    When there's no promo code, the discount applies automatically at checkout — customers don't need to enter anything.
+    If you set a promo code, customers enter it at checkout. If you leave it blank, only staff can apply it from the POS.
   </Accordion>
 
   <Accordion title="Birthday month discount" icon="cake-candles">
     Customers like being remembered. Give them 15% off during their birthday month.
 
-    **Setup:** Create a **Sub-total discount** named "Birthday Treat - 15% Off" with a **percentage** of 15% and a **value cap** of $20. Set the promo code to `BIRTHDAY` and limit usage to 1 per diner.
+    **Setup:** Create a **Sub-total discount** named "Birthday Treat - 15% Off" with a **percentage** of 15% and a **value cap** of &#36;20. Set the promo code to `BIRTHDAY` and limit usage to 1 per diner.
 
     **Make it work:** Add these conditions:
     - **User is registered** = Yes
@@ -80,14 +80,14 @@ Keep your regulars coming back.
   </Accordion>
 
   <Accordion title="Minimum spend discount" icon="receipt">
-    "Spend $50, get $10 off" — customers often add extra items to hit the threshold.
+    "Spend &#36;50, get &#36;10 off" — customers often add extra items to hit the threshold.
 
-    **Setup:** Create a **Sub-total discount** named "Spend 50 Get 10 Off" with a **fixed amount** of $10. Set the promo code to `SPEND50`.
+    **Setup:** Create a **Sub-total discount** named "Spend 50 Get 10 Off" with a **fixed amount** of &#36;10. Set the promo code to `SPEND50`.
 
     **Make it work:** Add this condition:
-    - **Cart total minimum spend** = $50
+    - **Cart total minimum spend** = &#36;50
 
-    You can create tiered discounts (Spend $50 get $10, Spend $80 get $20, Spend $120 get $35) using different promo codes for each tier.
+    You can create tiered discounts (Spend &#36;50 get &#36;10, Spend &#36;80 get &#36;20, Spend &#36;120 get &#36;35) using different promo codes for each tier.
   </Accordion>
 </AccordionGroup>
 
@@ -97,16 +97,16 @@ Fill slower periods or create buzz around specific times.
 
 <AccordionGroup>
   <Accordion title="Happy hour" icon="clock" defaultOpen="true">
-    Automatically discount drinks between 5-8pm on weekdays. Once set up, it runs without any manual work.
+    Discount drinks between 5-8pm on weekdays.
 
-    **Setup:** Create a **Per eligible item discount** named "Happy Hour 20% Off Drinks" with a **percentage** of 20% and an optional **value cap** of $10 per item. Leave the promo code blank so it applies automatically.
+    **Setup:** Create a **Per eligible item discount** named "Happy Hour 20% Off Drinks" with a **percentage** of 20% and an optional **value cap** of &#36;10 per item. Set the promo code to `HAPPYHOUR` or leave it blank for POS-only.
 
     **Make it work:** Add these conditions:
     - **Cart items include either one of** = (select all drink items)
     - **Serving time is between** = 17:00 – 20:00
     - **Serving day of the week is** = Mon, Tue, Wed, Thu, Fri
 
-    Instead of selecting drinks one by one, tag them with "happy-hour" in Menu Builder. Then use **"User or product tags include"** with the tag "happy-hour". When you add new drinks, just add the tag — no need to update the discount.
+    If you have many drinks and don't want to select them one by one, tag them with "happy-hour" in Menu Builder and use **"User or product tags include"** instead.
   </Accordion>
 
   <Accordion title="1-for-1 promotion" icon="beer-mug-empty">
@@ -125,13 +125,13 @@ Fill slower periods or create buzz around specific times.
     - 4 beers → 2 cheapest free
     - 3 beers → 1 free (odd one is full price)
 
-    The system always discounts the cheapest item. A $12 Tiger and a $20 craft beer? The Tiger is free.
+    The system always discounts the cheapest item. A &#36;12 Tiger and a &#36;20 craft beer? The Tiger is free.
   </Accordion>
 
   <Accordion title="Weekend special" icon="calendar-week">
     Automatic 15% discount on Saturday and Sunday.
 
-    **Setup:** Create a **Sub-total discount** named "Weekend Special 15% Off" with a **percentage** of 15% and a **value cap** of $20. Set the promo code to `WEEKEND15`.
+    **Setup:** Create a **Sub-total discount** named "Weekend Special 15% Off" with a **percentage** of 15% and a **value cap** of &#36;20. Set the promo code to `WEEKEND15`.
 
     **Make it work:** Add this condition:
     - **Serving day of the week is** = Saturday, Sunday
@@ -155,7 +155,7 @@ Target specific channels or outlets.
   <Accordion title="Outlet grand opening" icon="store">
     30% off at a new location. Set an end date and cap the discount to protect margins.
 
-    **Setup:** Create a **Sub-total discount** named "Grand Opening 30% Off" with a **percentage** of 30% and a **value cap** of $30. Set the promo code to `GRANDOPEN` and set a **Redemption end date** for when the promotion ends.
+    **Setup:** Create a **Sub-total discount** named "Grand Opening 30% Off" with a **percentage** of 30% and a **value cap** of &#36;30. Set the promo code to `GRANDOPEN` and set a **Redemption end date** for when the promotion ends.
 
     **Make it work:** Add this condition:
     - **Outlet is** = (select your new outlet)
@@ -168,9 +168,9 @@ Discounts for employees and partners.
 
 <AccordionGroup>
   <Accordion title="Staff discount" icon="id-badge" defaultOpen="true">
-    Staff log in with their work email and the discount applies automatically. No codes to manage or share.
+    Give staff a discount when they order. They log in with their work email and enter the promo code.
 
-    **Setup:** Create a **Sub-total discount** named "Staff Discount" with a **percentage** of 25%. Leave the promo code blank so it applies automatically.
+    **Setup:** Create a **Sub-total discount** named "Staff Discount" with a **percentage** of 25%. Set the promo code to `STAFF25` or leave it blank for POS-only.
 
     **Make it work:** Add these conditions:
     - **User is registered** = Yes
@@ -217,7 +217,7 @@ Day-to-day discounts for your team.
     **Make it work:** Add this condition:
     - **Cart items exclude all of** = (select all alcohol items)
 
-    The discount applies to the whole order except alcohol. $50 of food and $20 of beer? Only the food is discounted.
+    The discount applies to the whole order except alcohol. &#36;50 of food and &#36;20 of beer? Only the food is discounted.
   </Accordion>
 </AccordionGroup>
 
@@ -225,7 +225,7 @@ Day-to-day discounts for your team.
 
 | I want to... | Use this discount type |
 | --- | --- |
-| Give % or $ off the whole order | Sub-total discount |
+| Give % or &#36; off the whole order | Sub-total discount |
 | Discount including surcharges | Total discount |
 | Discount including taxes (voucher-style) | Cash voucher |
 | Give free or discounted delivery | Delivery fee discount |
